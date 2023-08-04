@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Navbar_Images/tab_icon1.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirchTree | Sign In</title>
+    <link rel="stylesheet" href="CSS_Files/signIn.css">
+    
+
+</head>
+<body>
+
+    <script>
+        $(document).ready(function(){
+      $('.alert1').hide();
+      $('.alert2').hide();
+      $('#an').hide();
+  });
+
+    </script>
+
+<script>
+    if (sessionStorage.getItem("loadSIn")==null )
+{
+  var myVar;
+  myVar = setTimeout(showPage, 1000);
+}
+
+else
+{
+  document.onreadystatechange = function() { 
+    if (document.readyState === "complete") { 
+        document.getElementById("animation_body").style.display = "block"; 
+        document.getElementById("animation").style.display = "none"; 
+    }  
+  };
+}
+
+function showPage() 
+{
+  document.getElementById("animation_body").style.display = "block"; 
+  document.getElementById("animation").style.display = "none"; 
+  sessionStorage.setItem("loadSIn",1);
+}   
+
+  </script>
+
+  <div class="animation" id="animation">
+    <img src="Navbar_Images/load.png" class="load_logo">
+    <img src="Navbar_Images/load.gif" class="load_anim">
+  </div>
+
+  <div class="animation_body" id="animation_body">
+
+    <div class="cont">
+
+        <img src="SN_Images/img5.jpg" class="img">
+        
+        <p class="title">Sign In</p>
+
+        <div class="input-group i1">
+            <button class="btn b" type="button">
+            <i class="fa fa-user-circle ic"></i> </button>
+            <input class="in" placeholder="Username" type="text" id="user" autocomplete="off">
+        </div>
+
+        <div class="input-group i2">
+            <button class="btn b" type="button">
+            <i class="fa fa-lock ic"></i> </button>
+            <input class="in" placeholder="Password" type="password" id="psw">
+        </div>
+
+        <img src="Navbar_Images/tri2.png" class="alert1" id="alert1">
+        <div class="alert2" id="alert2">
+        <span class="popuptext" id="al">Alert
+        </span></div>
+
+        <img src="Navbar_Images/load1.gif" id="an">
+
+        <button class="done btn" onclick="check()">Sign In</button>
+
+        <a href="Reset_Password.html" class="para0">Forgot Password?</a>
+
+        <p class="para">Not registered? - <a href="Sign_Up.html" class="link">Sign Up</a> or visit <a href="Index.html" class="link">Home</a></p>
+
+
+    </div>
+
+    <script>
+
+function check()
+{
+    var t=document.getElementById("user").value, u=document.getElementById("psw").value;
+    var l1=t.length, l2=u.length, cred=t+l1+"-"+u+l2, cred1=t+l1; 
+
+    if (t=="" && u=="")
+    {
+        $(document).ready(function(){
+        document.getElementById('alert1').style.opacity="1";
+        document.getElementById('alert2').style.opacity="1";
+        document.getElementById('al').innerHTML="No input!";
+        $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+        return; 
+    }
+
+    if (t=="")
+    {
+        $(document).ready(function(){
+        document.getElementById('alert1').style.opacity="1";
+        document.getElementById('alert2').style.opacity="1";
+        document.getElementById('al').innerHTML="Please enter a username!";
+        $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+        return;  
+    }
+
+    if (u=="")
+    {
+        $(document).ready(function(){
+        document.getElementById('alert1').style.opacity="1";
+        document.getElementById('alert2').style.opacity="1";
+        document.getElementById('al').innerHTML="Please enter a password!";
+        $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+        return; 
+    }
+
+
+    if (sessionStorage.getItem("data")!=null)
+    {
+    var z=sessionStorage.getItem("data"), z1=z.includes(cred), z2=z.includes(cred1);
+
+   if(z1==true)
+   { 
+       sessionStorage.setItem("user",t); 
+       sessionStorage.setItem("psw",u); 
+       document.getElementById('an').style.opacity="1";
+       $(document).ready(function(){
+       $('#an').show(); }); setTimeout(alertf,1500); 
+   }
+
+   else if (z2==true)
+   {
+    $(document).ready(function(){
+    document.getElementById('alert1').style.opacity="1";
+    document.getElementById('alert2').style.opacity="1";
+    document.getElementById('al').innerHTML="Invalid password!";
+    $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+    return; 
+   }
+
+   else
+   { 
+    $(document).ready(function(){
+    document.getElementById('alert1').style.opacity="1";
+    document.getElementById('alert2').style.opacity="1";
+    document.getElementById('al').innerHTML="Not Registered!";
+    $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+    return; 
+   }
+ }
+
+    else
+    { 
+    $(document).ready(function(){
+    document.getElementById('alert1').style.opacity="1";
+    document.getElementById('alert2').style.opacity="1";
+    document.getElementById('al').innerHTML="Not Registered!";
+    $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); 
+    return;
+    }
+}
+
+function alertg()
+        {
+            $(document).ready(function(){
+            $('.alert1').hide(); $('.alert2').hide(); });
+            document.getElementById('alert1').style.opacity="0";
+            document.getElementById('alert2').style.opacity="0";
+        }
+
+        function alertf()
+        {
+            $(document).ready(function(){
+            $('#an').hide(); });
+            document.getElementById('an').style.opacity="0"; 
+            var page_link=sessionStorage.getItem("page");
+            window.location.href=page_link;
+        }
+    
+    </script>
+    
+    </div>
+</body>
+</html>

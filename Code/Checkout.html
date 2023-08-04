@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="Navbar_Images/tab_icon1.png" type="image/png">
+    <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JQ_and_BS/popper.min.js"></script>
+    <script src="JQ_and_BS/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="CSS_Files/Style1.css">
+    <link rel="stylesheet" href="CSS_Files/FooterStyling.css">
+    <link rel="stylesheet" href="CSS_Files/additional_styling.css">
+    <link rel="stylesheet" href="CSS_Files/Checkout_Styling.css">
+    <link rel="stylesheet" href="CSS_Files/icons.css">
+    <!--script src="Code.js"></script-->
+    <script src="js/Checkout_Code.js"></script>
+    <script src="js/Icons.js"></script>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirchTree | Checkout</title>
+</head>
+<body onload="initialize()" id="body" onresize="reset_nav_styling()">
+
+  <div class="animation" id="animation">
+    <img src="Navbar_Images/load.png" class="load_logo">
+    <img src="Navbar_Images/load.gif" class="load_anim">
+  </div>
+
+  <div class="animation_body" id="animation_body">
+
+ 
+
+    <div class="overlay" id="ovr">
+    </div> <!-- OVERLAY ENDS -->
+
+    <nav class="a x navbar navbar-expand-lg all_bright">
+        <a class="navbar-brand" href="navbar.html">
+          <img src="Navbar_Images/logo1.png" class="logo">
+          <img src="Navbar_Images/logo1.jpg" class="logo1">
+        </a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="coll collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="n nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Men Clothing.html">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Women Clothing.html">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Kids Clothing.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Story.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Support.html">Support</a>
+            </li>
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right n2 n3">
+            <span class="nav-link user1" id="user_id">
+            </span>
+          </ul>
+
+          
+
+          <ul class="navbar-nav navbar-right n2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="Navbar_Images/user1.png" class="user"> 
+              </a>
+            <div class="dropdown-menu dropdown-menu-right user-cont" id="user-cont" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item in user-menu" onclick="sign_in_func()">Sign In</a>
+                <a class="dropdown-item up user-menu" onclick="sign_out_func()">Sign Up</a>
+                <a class="dropdown-item out user-menu" onclick="logout()">Sign Out</a>
+                <a class="dropdown-item ord_h user-menu" onclick="my_orders()">My Orders</a>
+              </div>
+        </ul>
+
+        <script>
+          function my_orders() { window.location.href="Orders.html"; }
+        </script>
+          
+          
+        </div>
+      </nav>
+
+      <img src="Navbar_Images/quick.png" class="btn-ic1 all-ic" id="btn-ic1" title="Quick Access">
+  <p class="p-ic1 p-all" id="p-ic1">Quick Access</p>
+  <img src="Navbar_Images/track.png" class="btn-ic2 all-ic" id="btn-ic2" onclick="icf2()">
+  <p class="p-ic2 p-all" id="p-ic2">Track Order</p>
+  <img src="Navbar_Images/sale.png" class="btn-ic3 all-ic" id="btn-ic3" onclick="icf3()">
+  <p class="p-ic3 p-all" id="p-ic3">Go to Sale</p>
+  <img src="Navbar_Images/email.png" class="btn-ic4 all-ic" id="btn-ic4" onclick="icf4()">
+  <p class="p-ic4 p-all" id="p-ic4">Send Email</p>
+    
+
+      <div class="bar-cont" id="bar-cont">
+        <div class="bar" id="bar"></div>
+        <p class="b-text1 b-text-all"><b>1</b>&nbsp;&nbsp;Contact</p>
+        <p class="b-text2 b-text-all"><b>2</b>&nbsp;&nbsp;Shipping</p>
+        <p class="b-text3 b-text-all"><b>3</b>&nbsp;&nbsp;Payment</p>
+      </div>
+
+
+      <div class="order-display" id="order-display"><p class="ord-text">Order Placed!</p>
+      <div class="btn-group btn-cont" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary b-o1" onclick="copy_num('#order-number')"><i class="fa fa-files-o"></i></button>
+        <button type="button" class="btn btn-secondary b-o2">No.&nbsp;<b id="order-number">12345</b></button>
+      </div>
+      <p class="num_copied">Copied!</p>
+       
+      <button class="btn btn-dark close_ord" onclick="close_order()">Done</button>
+      </div>
+
+      <script>
+
+function copy_num(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  $(document).ready(function(){
+  $('.num_copied').show(); 
+setTimeout(fhide,1500);
+function fhide() { $('.num_copied').hide(); }
+});
+}
+
+      </script>
+
+      <div class="container-fluid all_bright">
+
+        
+        <p class="title5" id="za">Checkout</p>
+
+        
+        
+        <div class="row">
+      <div class="col-md-6 cont1">
+
+        
+        <div class="main-card1" id="main-card1">
+          <p class="cart_head1">My Cart ( <b id="my-cart-count">0</b> )</p>
+        <p class="cart_head2">Total &nbsp;<span id="my-cart-curr">$</span>&nbsp;<b id="my-cart-total">0</b></p>
+
+          <div class="item-container" id="item-container">
+
+          <div class="dropdown-item c_all" id="ia">  <!-- PRODUCT 1 -->
+            <p class="cname">Diamond Print Shirt | <span id="curr1">$</span>&nbsp;<span id="amount1">21.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_a">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_a">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ia',21,'a',1)"></div>
+            <div class="dropdown-item c_all" id="ib">  <!-- PRODUCT 2 -->
+            <p class="cname">Hallsville Shirt | <span id="curr2">$</span>&nbsp;<span id="amount2">30.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_b">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_b">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ib',30,'b',2)"></div>
+            <div class="dropdown-item c_all" id="ic">  <!-- PRODUCT 3 -->
+            <p class="cname">Horseshoe Shirt | <span id="curr3">$</span>&nbsp;<span id="amount3">45.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_c">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_c">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ic',45,'c',3)"></div>
+            <div class="dropdown-item c_all" id="id">  <!-- PRODUCT 4 -->
+            <p class="cname">Houston Shirt | <span id="curr4">$</span>&nbsp;<span id="amount4">52.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_d">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_d">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('id',52,'d',4)"></div>
+            <div class="dropdown-item c_all i5" id="ie">  <!-- PRODUCT 5 -->
+            <p class="cname">Ingleside Stretch Shirt | <span id="curr5">$</span>&nbsp;<span id="amount5">55.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_e">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_e">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ie',55,'e',5)"></div>
+            <div class="dropdown-item c_all i6" id="if">  <!-- PRODUCT 6 -->
+            <p class="cname">Printed Shirt | <span id="curr6">$</span>&nbsp;<span id="amount6">60.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_f">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_f">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('if',60,'f',6)"></div>
+            <div class="dropdown-item c_all i1" id="ig">  <!-- PRODUCT 7-->
+            <p class="cname">Tang Hooded Plaid Shirt | <span id="curr7">$</span>&nbsp;<span id="amount7">65.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_g">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_g">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ig',65,'g',7)"></div>
+            <div class="dropdown-item c_all i2" id="ih">  <!-- PRODUCT 8 -->
+            <p class="cname">Riviera Shirt | <span id="curr8">$</span>&nbsp;<span id="amount8">70.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_h">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_h">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ih',70,'h',8)"></div>
+            <div class="dropdown-item c_all i3" id="ii">  <!-- PRODUCT 9 -->
+            <p class="cname">Zip City Shirt | <span id="curr9">$</span>&nbsp;<span id="amount9">71.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_i">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_i">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ii',71,'i',9)"></div>
+            <div class="dropdown-item c_all i4" id="ij">  <!-- PRODUCT 10 -->
+            <p class="cname">Switch Up Jacket | <span id="curr10">$</span>&nbsp;<span id="amount10">75.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_j">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_j">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ij',75,'j',10)"></div>
+            <div class="dropdown-item c_all i5" id="ik">  <!-- PRODUCT 11 -->
+            <p class="cname">Charge Jacket | <span id="curr11">$</span>&nbsp;<span id="amount11">75.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_k">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_k">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ik',75,'k',11)"></div>
+            <div class="dropdown-item c_all i6" id="il">  <!-- PRODUCT 12 -->
+            <p class="cname">Niles Jacket | <span id="curr12">$</span>&nbsp;<span id="amount12">77.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_l">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_l">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('il',77,'l',12)"></div>
+            <div class="dropdown-item c_all i1" id="im">  <!-- PRODUCT 13 -->
+            <p class="cname">Smocked Hem Blouse | <span id="curr13">$</span>&nbsp;<span id="amount13">21.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_m">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_m">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('im',21,'m',13)"></div>
+            <div class="dropdown-item c_all i2" id="in">  <!-- PRODUCT 14 -->
+            <p class="cname">Ribbed Knit Sweater | <span id="curr14">$</span>&nbsp;<span id="amount14">32.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_n">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_n">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('in',32,'n',14)"></div>
+            <div class="dropdown-item c_all i3" id="io">  <!-- PRODUCT 15 -->
+            <p class="cname">Embelished Cuff Blouse | <span id="curr15">$</span>&nbsp;<span id="amount15">35.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_o">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_o">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('io',35,'o',15)"></div>
+            <div class="dropdown-item c_all i4" id="ip">  <!-- PRODUCT 16 -->
+            <p class="cname">Open-back Cami Jumpsuit | <span id="curr16">$</span>&nbsp;<span id="amount16">45.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_p">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_p">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ip',45,'p',16)"></div>
+            <div class="dropdown-item c_all i5" id="iq">  <!-- PRODUCT 17 -->
+            <p class="cname">Self Tie Jumpsuit | <span id="curr17">$</span>&nbsp;<span id="amount17">50.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_q">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_q">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iq',50,'q',17)"></div>
+            <div class="dropdown-item c_all i6" id="ir">  <!-- PRODUCT 18 -->
+            <p class="cname">Trumpet Sleeve Jumpsuit | <span id="curr18">$</span>&nbsp;<span id="amount18">55.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_r">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_r">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ir',55,'r',18)"></div>
+            <div class="dropdown-item c_all i1" id="is">  <!-- PRODUCT 19 -->
+            <p class="cname">Lace Insert Peplum Top | <span id="curr19">$</span>&nbsp;<span id="amount19">57.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_s">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_s">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('is',57,'s',19)"></div>
+            <div class="dropdown-item c_all i2" id="it">  <!-- PRODUCT 20 -->
+            <p class="cname">Stripped Smock Top | <span id="curr20">$</span>&nbsp;<span id="amount20">63.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_t">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_t">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('it',63,'t',20)"></div>
+            <div class="dropdown-item c_all i3" id="iu">  <!-- PRODUCT 21 -->
+            <p class="cname">Lace Yoke Smock Top | <span id="curr21">$</span>&nbsp;<span id="amount21">77.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_u">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_u">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iu',77,'u',21)"></div>
+            <div class="dropdown-item c_all i4" id="iv">  <!-- PRODUCT 22 -->
+            <p class="cname">Bardot Dress | <span id="curr22">$</span>&nbsp;<span id="amount22">100.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_v">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_v">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iv',100,'v',22)"></div>
+            <div class="dropdown-item c_all i5" id="iw">  <!-- PRODUCT 23 -->
+            <p class="cname">Polka Dot Jumpsuit | <span id="curr23">$</span>&nbsp;<span id="amount23">120.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_w">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_w">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iw',120,'w',23)"></div>
+            <div class="dropdown-item c_all i6" id="ix">  <!-- PRODUCT 24 -->
+            <p class="cname">Vertical-stripped Jumpsuit | <span id="curr24">$</span>&nbsp;<span id="amount24">131.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_x">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_x">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('ix',131,'x',24)"></div>
+            <div class="dropdown-item c_all i1" id="iy">  <!-- PRODUCT 25 -->
+            <p class="cname">Mini Mermaid Shirt | <span id="curr25">$</span>&nbsp;<span id="amount25">59.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_y">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_y">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iy',59,'y',25)"></div>
+            <div class="dropdown-item c_all i2" id="iz">  <!-- PRODUCT 26 -->
+            <p class="cname">Floral Top | <span id="curr26">$</span>&nbsp;<span id="amount26">19.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_z">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_z">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('iz',19,'z',26)"></div>
+            <div class="dropdown-item c_all i3" id="i0">  <!-- PRODUCT 27 -->
+            <p class="cname">Green Floral Top | <span id="curr27">$</span>&nbsp;<span id="amount27">55.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_0">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_0">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i0',55,'0',27)"></div>
+            <div class="dropdown-item c_all i4" id="i1">  <!-- PRODUCT 28 -->
+            <p class="cname">Embroidered Frock | <span id="curr28">$</span>&nbsp;<span id="amount28">43.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_1">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_1">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i1',43,'1',28)"></div>
+            <div class="dropdown-item c_all i5" id="i2">  <!-- PRODUCT 29 -->
+            <p class="cname">Pink Sunshine T-shirt | <span id="curr29">$</span>&nbsp;<span id="amount29">30.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_2">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_2">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i2',30,'2',29)"></div>
+            <div class="dropdown-item c_all i6" id="i3">  <!-- PRODUCT 30 -->
+            <p class="cname">White T-shirt | <span id="curr30">$</span>&nbsp;<span id="amount30">21.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_3">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_3">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i3',21,'3',30)"></div>
+            <div class="dropdown-item c_all i1" id="i4">  <!-- PRODUCT 31 -->
+            <p class="cname">Lining Shirt | <span id="curr31">$</span>&nbsp;<span id="amount31">111.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_4">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_4">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i4',111,'4',31)"></div>
+            <div class="dropdown-item c_all i2" id="i5">  <!-- PRODUCT 32 -->
+            <p class="cname">Red Chequered Shirt | <span id="curr32">$</span>&nbsp;<span id="amount32">89.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_5">2</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_5">M</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i5',89,'5',32)"></div>
+            <div class="dropdown-item c_all i3" id="i6">  <!-- PRODUCT 33 -->
+            <p class="cname">Blue Chequered Shirt | <span id="curr33">$</span>&nbsp;<span id="amount33">65.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_6">3</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_6">L</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i6',65,'6',33)"></div>
+            <div class="dropdown-item c_all i4" id="i7">  <!-- PRODUCT 34 -->
+            <p class="cname">Red Underwater Shirt | <span id="curr34">$</span>&nbsp;<span id="amount34">100.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_7">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_7">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i7',100,'7',34)"></div>
+            <div class="dropdown-item c_all i5" id="i8">  <!-- PRODUCT 35 -->
+            <p class="cname">Blue Underwater Shirt | <span id="curr35">$</span>&nbsp;<span id="amount35">120.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_8">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_8">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i8',120,'8',35)"></div>
+            <div class="dropdown-item c_all i6" id="i9">  <!-- PRODUCT 36 -->
+            <p class="cname">Plaid Pattern Shirt | <span id="curr36">$</span>&nbsp;<span id="amount36">77.00</span></p><p class="cquantity">Quantity:&nbsp;<b id="q_9">1</b></p>
+            <p class="csize">Size:&nbsp;<b id="s_9">S</b></p><img src="Navbar_Images/del.png" class="cdel" onclick="delete1('i9',77,'9',36)"></div>
+
+            <!--div class="dropdown-item error55" id="error55"></div-->
+            <img src="Checkout_Images/user.png" class="user_img" id="user_img">
+            <img src="Checkout_Images/empty.png" class="empty_img" id="empty_img">
+            <p class="img_cap1" id="img_cap1">Sign in to view your cart</p>
+            <p class="img_cap2" id="img_cap2">No items added to cart</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#body" class="btn btn-light to_top"><i class="fa fa-chevron-up ttp"></i></a>
+
+<script>
+  $(document).ready(function(){
+    $(".to_top").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        }); } }); });
+  </script>
+      
+      <div class="col-md-6 cont2">
+
+        
+  
+        <div class="card main-card2">
+          <div class="card-body">
+        
+            <!-- PANEL 1 STARTS -->
+          <img src="Checkout_Images/contact.jpg" class="panel1 panel1_img" id="panel-1a">
+          <p class="panel1 panel1_title" id="panel-1b">Contact Information</p>
+          <p class="panel1 panel1_para" id="panel-1c">Please provide your contact details. </p>
+          
+           <form class="panel1 panel1_form" id="panel-1d">
+          <div class="form-group p1_input1">
+            <input type="textarea" class="form-control  txtar" id="" placeholder="Name">
+          </div>
+        
+          <div class="form-group p1_input2">
+            <input type="textarea" class="form-control  txtar" id="" placeholder="Email Address">
+          </div>
+          
+          <div class="dropdown select_reg p1_input3">
+            <button class="btn dropdown-toggle reg_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <ins id="btn1-inside">Select Region</ins>
+            </button>
+            <div class="dropdown-menu dp-mn" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item reg_us">United States ($)</a>
+              <a class="dropdown-item reg_uk">United Kingdom (£)</a>
+              <a class="dropdown-item reg_pk">Pakistan (PKR)</a>
+            </div>
+          </div>
+        </form>
+
+        <p class="err-btm" id="err-btm">Choose Region</p>
+        
+           <!-- PANEL 1 ENDS -->
+        
+             <!-- PANEL 2 STARTS -->
+          <img src="Checkout_Images/ship.jpg" class="panel2 panel2_img" id="panel-2a">
+          <p class="panel2 panel2_title" id="panel-2b">Shipping Information</p>
+          <p class="panel2 panel2_para" id="panel-2c">Please provide your shipping details. </p>
+          
+           <form class="panel2 panel2_form" id="panel-2d">
+          <div class="form-group  p2_input1">
+            <input type="textarea" class="form-control  txtar" id="" placeholder="Address 1">
+          </div>
+        
+          <div class="form-group  p2_input2">
+            <input type="textarea" class="form-control  txtar" id="" placeholder="Address 2">
+          </div>
+        
+          <div class="dropdown select_ship">
+            <button class="btn btn-light dropdown-toggle panel2_btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <ins id="btn2-inside">Shipping Option</ins>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item fdx">FedEx</a>
+              <a class="dropdown-item dhl">DHL</a>
+            </div>
+          </div>
+          
+        </form>
+        
+        <script>
+        $(document).ready(function(){
+
+          var price_us1=["21.00","30.00","45.00","52.00","55.00","60.00","65.00","70.00","71.00","75.00","75.00","77.00","21.00","32.00","35.00","45.00","50.00","55.00","57.00","63.00","77.00","100.00","120.00","131.00","59.00","19.00","55.00","43.00","30.00","21.00","111.00","89.00","65.00","100.00","120.00","77.00"]; 
+        var price_uk1=["16.20","23.10","34.70","40.00","42.40","46.20","50.10","53.90","54.70","57.80","57.80","59.30","16.20","24.60","27.00","34.70","38.50","42.40","43.90","48.50","59.30","77.00","92.40","100.90","45.40","14.60","42.40","33.10","23.10","16.20","85.50","68.50","50.10","77.00","92.40","59.30"];
+        var price_pk1=["3,500","5,000 ","7,490","8,660","9,160","9,990","10,820","11,660","11,820","12,490","12,490","12,820","3,500","5,330","5,830","7,490","8,330","9,160","9,490","10,490","12,820","16,650","19,980","21,810","9,820","3,160","9,160","7,160","5,000","3,500","18,480","14,820","10,820","16,650","19,980","12,820"];
+         
+          $('.reg_us').click(function(){
+          document.getElementById('btn1-inside').innerHTML="United States ($)";
+         document.getElementById("btn1-inside").style.color="black";
+         $(document).ready(function(){
+        $('.err-btm').hide(); });
+
+        var user_1=sessionStorage.getItem("user"), psw_1=sessionStorage.getItem("psw");
+        var curr_dt=sessionStorage.getItem("curr_data");
+        var user_string=user_1+user_1.length+"-"+psw_1+psw_1.length+"/", first_indx=curr_dt.search(user_string);
+        var curr_string="", cr_us="",cr_us="",cr_uk="",cr_pk="";
+            
+        for (var g=first_indx; g<curr_dt.length; g++)
+       {
+         if (curr_dt.substr(g,1)==" ") { break; }
+         curr_string=curr_string+curr_dt.substr(g,1);
+       }
+        
+       for (var cr=0; cr<curr_string.length; cr++)
+       {
+         if (curr_string.substr(cr,1)==" ") { break; }
+         if (cr>curr_string.indexOf("/") && cr<curr_string.indexOf("($")) { cr_us=cr_us+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("$)")+1) && (cr<curr_string.indexOf("(£")))
+         { cr_uk=cr_uk+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("£)")+1) && (cr<curr_string.indexOf("(PKR")))
+         { cr_pk=cr_pk+curr_string.substr(cr,1); }       
+       }
+
+       document.getElementById('my-cart-curr').innerHTML="$";
+       document.getElementById('my-cart-curr1').innerHTML="$";
+      document.getElementById('my-cart-total').innerHTML=cr_us;
+      document.getElementById('my-cart-total1').innerHTML=cr_us;
+
+      for (var h=1; h<37; h++)
+       {
+         var cr_id="curr"+h;
+         var pr_id="amount"+h;
+         document.getElementById(cr_id).innerHTML="$";
+         document.getElementById(pr_id).innerHTML=price_us1[h-1];
+       }
+
+        });
+
+          $('.reg_uk').click(function(){
+          document.getElementById('btn1-inside').innerHTML="United Kingdom (£)"; 
+          document.getElementById("btn1-inside").style.color="black";
+          $(document).ready(function(){
+        $('.err-btm').hide(); });
+
+        var user_1=sessionStorage.getItem("user"), psw_1=sessionStorage.getItem("psw");
+        var curr_dt=sessionStorage.getItem("curr_data");
+        var user_string=user_1+user_1.length+"-"+psw_1+psw_1.length+"/", first_indx=curr_dt.search(user_string);
+        var curr_string="", cr_us="",cr_us="",cr_uk="",cr_pk="";
+            
+        for (var g=first_indx; g<curr_dt.length; g++)
+       {
+         if (curr_dt.substr(g,1)==" ") { break; }
+         curr_string=curr_string+curr_dt.substr(g,1);
+       }
+        
+       for (var cr=0; cr<curr_string.length; cr++)
+       {
+         if (curr_string.substr(cr,1)==" ") { break; }
+         if (cr>curr_string.indexOf("/") && cr<curr_string.indexOf("($")) { cr_us=cr_us+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("$)")+1) && (cr<curr_string.indexOf("(£")))
+         { cr_uk=cr_uk+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("£)")+1) && (cr<curr_string.indexOf("(PKR")))
+         { cr_pk=cr_pk+curr_string.substr(cr,1); }       
+       }
+
+       document.getElementById('my-cart-curr').innerHTML="£";
+       document.getElementById('my-cart-curr1').innerHTML="£";
+      document.getElementById('my-cart-total').innerHTML=cr_uk;
+      document.getElementById('my-cart-total1').innerHTML=cr_uk;
+
+      for (var h=1; h<37; h++)
+       {
+         var cr_id="curr"+h;
+         var pr_id="amount"+h;
+         document.getElementById(cr_id).innerHTML="£";
+         document.getElementById(pr_id).innerHTML=price_uk1[h-1];
+       }
+
+        });
+
+          $('.reg_pk').click(function(){
+
+          document.getElementById('btn1-inside').innerHTML="Pakistan (PKR)";
+          document.getElementById("btn1-inside").style.color="black";
+          $(document).ready(function(){
+        $('.err-btm').hide(); });
+         
+        var user_1=sessionStorage.getItem("user"), psw_1=sessionStorage.getItem("psw");
+        var curr_dt=sessionStorage.getItem("curr_data");
+        var user_string=user_1+user_1.length+"-"+psw_1+psw_1.length+"/", first_indx=curr_dt.search(user_string);
+        var curr_string="", cr_us="",cr_us="",cr_uk="",cr_pk="";
+            
+        for (var g=first_indx; g<curr_dt.length; g++)
+       {
+         if (curr_dt.substr(g,1)==" ") { break; }
+         curr_string=curr_string+curr_dt.substr(g,1);
+       }
+        
+       for (var cr=0; cr<curr_string.length; cr++)
+       {
+         if (curr_string.substr(cr,1)==" ") { break; }
+         if (cr>curr_string.indexOf("/") && cr<curr_string.indexOf("($")) { cr_us=cr_us+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("$)")+1) && (cr<curr_string.indexOf("(£")))
+         { cr_uk=cr_uk+curr_string.substr(cr,1); }
+         if ((cr>curr_string.indexOf("£)")+1) && (cr<curr_string.indexOf("(PKR")))
+         { cr_pk=cr_pk+curr_string.substr(cr,1); }       
+       }
+
+       document.getElementById('my-cart-curr').innerHTML="PKR";
+       document.getElementById('my-cart-curr1').innerHTML="PKR";
+      
+         if (cr_pk.length==4) 
+         {
+           var let1=cr_pk.substr(0,1), cr_pk1=cr_pk;
+           cr_pk1=cr_pk1.replace(let1,(let1+","));
+         }
+         else if (cr_pk.length==5) 
+         {
+           var let1=cr_pk.substr(1,1), cr_pk1=cr_pk;
+           cr_pk1=cr_pk1.replace(let1,(let1+","));
+         }
+         else if (cr_pk.length==6) 
+         {
+           var let1=cr_pk.substr(2,1), cr_pk1=cr_pk;
+           cr_pk1=cr_pk1.replace(let1,(let1+","));
+         }
+
+      document.getElementById('my-cart-total').innerHTML=cr_pk1;
+      document.getElementById('my-cart-total1').innerHTML=cr_pk1;
+
+      for (var h=1; h<37; h++)
+       {
+         var cr_id="curr"+h;
+         var pr_id="amount"+h;
+         document.getElementById(cr_id).innerHTML="PKR";
+         document.getElementById(pr_id).innerHTML=price_pk1[h-1];
+       }
+
+        });
+             
+        });
+        
+        </script>
+        
+           <!-- PANEL 2 ENDS -->
+        
+         <!-- PANEL 3 STARTS -->
+         
+         <img src="Checkout_Images/pay.jpg" class="panel3 panel3_img" id="panel-3a">
+         <p class="panel3 panel3_title" id="panel-3b">Payment</p>
+         <p class="panel3 panel3_para" id="panel-3c"> Total: <b><span id="my-cart-curr1">$</span>&nbsp;<ins class="real_total" id="my-cart-total1">0</ins></b></p>
+         
+          <form class="panel3 panel3_form" name="panel3_form3" id="panel-3d">
+         <div class="form-group p3_input1">
+           <input type="textarea" class="form-control  txtar" id="card-input" placeholder="Card Number" name="card_check" onkeyup="addHyphen(this)">
+           <span class="error_3" id="error-3">Invalid Number!</span>
+         </div>
+        
+         <div class="form-group p3_input2">
+           <input type="textarea" class="form-control  txtar" id="" placeholder="Card Validity">
+           
+         </div>
+         
+        </form>
+        
+        
+        <button class="btn btn-dark buy panel3" id="panel-3e" type="button" onclick="place()">Pay</button>
+          <!-- PANEL 3 ENDS -->
+          
+          
+          <button class="btn btn-dark prev1">Back</button>
+        <button class="btn btn-dark next1">Next</button>
+        <button class="btn btn-dark prev2">Back</button>
+        <button class="btn btn-dark next2">Next</button>  
+          </div>
+        </div>
+           
+        
+
+            </div>  <!-- CONT2 ENDS -->
+            </div> <!-- ROW ENDS -->
+            </div> <!-- CONTAINER-FLUID ENDS -->
+
+      <div class="footer all_bright" id="ft">
+
+        <div class="wave-cont">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="black" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,96C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
+        </div>
+
+       <a href="#"><img src="Footer/image2.png" class="foot_logo"></a> 
+        
+
+        <div class="email">
+            <input type="email" placeholder="Email Address" id="em">
+            <div class="cont"><button class="btn btn1" id="bn">Subscribe</button></div>
+        </div>
+
+        <div class="col1">
+            <p class="p_title">Support</p>
+            <a href="#" class="link"><span class="flink">Orders</span></a><br> 
+            <a href="#" class="link"><span class="flink">Exchanges</span></a><br>
+            <a href="#" class="link"><span class="flink">Returns</span></a><br>
+        </div>
+
+        <div class="col2">
+            <p class="p_title">Company</p>
+            <a href="#" class="link"><span class="flink">Stores</span></a><br> 
+            <a href="#" class="link"><span class="flink">Terms of Use</span></a><br>
+            <a href="#" class="link"><span class="flink">Affiliates</span></a><br>
+        </div>
+
+        <div class="col3">
+            <p class="p_title">Help</p>
+            <a href="#" class="link"><span class="flink">Blog & FAQs</span></a><br> 
+            <a href="#" class="link"><span class="flink">Contact Us</span></a><br>
+            <a href="#" class="link"><span class="flink">Accessibility</span></a><br>
+        </div>
+
+        <div class="col4">
+            <p class="p_title">About</p>
+            <a href="#" class="link"><span class="flink">Our Story</span></a><br> 
+            <a href="#" class="link"><span class="flink">Careers</span></a><br>
+            <a href="#" class="link"><span class="flink">Newsroom</span></a><br>
+        </div>
+
+
+        <div class="img1">  
+            <a href=""><img src="Footer/fb1.png" class="fb"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/fb.png" class="fb1"> </a>
+        </div>
+
+        <div class="img2">  
+            <a href=""><img src="Footer/ig1.png" class="ig"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/ig.png" class="ig1"> </a>
+        </div>
+
+        <div class="img3">  
+            <a href=""><img src="Footer/yt1.png" class="yt"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/yt.png" class="yt1"> </a>
+        </div>
+
+        <div class="img4">  
+            <a href=""><img src="Footer/tw1.png" class="tw"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/tw.png" class="tw1"> </a>
+        </div>
+
+        <img src="Footer/line.png" class="line">
+
+        <div class="dropdown d1">
+            <button class="btn b1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>
+                <img src="Footer/1a.png" class="f1 allf">
+                <img src="Footer/2a.png" class="f2 allf">
+                <img src="Footer/3a.png" class="f3 allf">
+                &nbsp;&nbsp;
+                <b><span  id="flag-country"></span></b></span>
+            </button>
+            <div class="dropdown-menu d-menu" aria-labelledby="dropdownMenuButton">
+              <span class="dropdown-item it o1">United States</span>
+              <span class="dropdown-item it o2">United Kingdom</span>
+              <span class="dropdown-item it o3">Europe</span>
+            </div>
+          </div>
+
+          <script>
+        
+          </script>
+          <p class="cp">BirchTree®. All rights reserved. 2020</p>
+    </div>
+    
+ </div>
+</body>
+</html>

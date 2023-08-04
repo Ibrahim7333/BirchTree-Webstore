@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Navbar_Images/tab_icon1.png" type="image/png">
+    <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JQ_and_BS/popper.min.js"></script>
+    <script src="JQ_and_BS/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirchTree | Thank You</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+     body 
+     {
+        margin: 0;
+         left: 0;
+         top: 0;   
+      overflow-x: hidden;
+     }
+
+     img
+     {
+         position: absolute;
+         margin: 0;
+         left: 0;
+         top: 0;
+         min-width: 100vw;
+         height: 100vh;
+        
+     }
+
+     .text1, .text2, .text3, .button
+     {
+         position: absolute;
+         font-family: "Josefin Sans";
+         color: white;
+         opacity: 1;
+         text-align: center;
+      
+     }
+
+     .text1
+     {
+       text-align: center;
+       margin-top:12vw;
+       margin-left: 10%;
+       font-size: 6vw;
+       width: 80%;
+     }
+
+     .text2
+     {
+        text-align: center;
+       margin-top:24vw;
+       margin-left: 10%;
+       font-size: 2.8vw;
+       width: 80%;
+       
+     }
+
+     .text3
+     {
+        text-align: center;
+       margin-top:30vw;
+       margin-left: 5%;
+       font-size: 2.5vw;
+       width: 90%;
+     }
+
+     .lastb
+     {
+       position: absolute;
+        text-align: center;
+       margin-top:40vw;
+       margin-left: 37%;
+       font-size: 1.5vw;
+       width: 26%;
+       padding-top: 0.7vw;
+       padding-bottom: 0.7vw;
+       background: white;
+       color: black;
+       border: none;
+       border-radius: 3vw;
+       font-family: "Josefin Sans";
+     }
+
+     .link { text-decoration: underline; cursor: pointer;}
+
+  
+     @media screen and (max-width: 550px)
+     {
+
+     body .text1
+     {
+       margin-top:18vw;
+       margin-left: 10%;
+       font-size: 13vw;
+       width: 80%;
+     }
+
+     body .text2
+     {
+       margin-top:60vw;
+       margin-left: 10%;
+       font-size: 6vw;
+       width: 80%;
+       
+     }
+
+     body .text3
+     {
+       margin-top:75vw;
+       margin-left: 5%;
+       font-size: 5vw;
+       width: 90%;
+     }
+
+     body .lastb
+     {
+       margin-top:100vw;
+       margin-left: 30%;
+       font-size: 3vw;
+       width: 40%;
+       padding-top: 1.5vw;
+       padding-bottom: 1.5vw;
+       border-radius: 5vw;
+     }
+
+    }
+     
+
+    </style>
+
+</head>
+<body onload="loadName()">
+    <img src="Landing_Images/last_back1.jpg">
+    <p class="text1"> Thank You <span id="name"></span> </p>
+     <p class="text2"> for your purchase!  </p>
+     <p class="text3"> We've sent the details to your inbox. To track your order, visit <span class="link" onclick="support()">Support</span>  </p>
+     <!--button class="btn button" onclick="home()">Return to Homepage</button-->
+      <button class="btn btn-light lastb" onclick="home()">Return to Home page</button>
+
+    
+   <script>
+
+       function home()
+       {
+           sessionStorage.setItem("last_name","");
+           window.location.href="Index.html";
+       }
+
+       function loadName()
+       {
+           var a=sessionStorage.getItem("last_name");
+           document.getElementById('name').innerHTML=a;
+       }
+
+       function support()
+      {
+        sessionStorage.setItem("last_name","");
+        sessionStorage.setItem("goTrack",1);
+        window.location.href="Support.html";
+      }
+
+
+   </script>
+
+</body>
+</html>

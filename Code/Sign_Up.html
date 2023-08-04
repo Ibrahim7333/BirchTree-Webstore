@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Navbar_Images/tab_icon1.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    
+    <link rel="stylesheet" href="CSS_Files/signUp.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirchTree | Sign Up</title>
+</head>
+<body>
+
+    <script>
+        if (sessionStorage.getItem("loadSUp")==null )
+    {
+      var myVar;
+      myVar = setTimeout(showPage, 2000);
+    }
+    
+    else
+    {
+      document.onreadystatechange = function() { 
+        if (document.readyState === "complete") { 
+            document.getElementById("animation_body").style.display = "block"; 
+            document.getElementById("animation").style.display = "none"; 
+        }  
+      };
+    }
+    
+    function showPage() 
+    {
+      document.getElementById("animation_body").style.display = "block"; 
+      document.getElementById("animation").style.display = "none"; 
+      sessionStorage.setItem("loadSUp",1);
+    }   
+    
+      </script>
+    
+      <div class="animation" id="animation">
+        <img src="Navbar_Images/load.png" class="load_logo">
+        <img src="Navbar_Images/load.gif" class="load_anim">
+      </div>
+    
+      <div class="animation_body" id="animation_body">
+
+    <div class="main-cont">
+
+        <div class="sub-cont1">
+            <img src="SN_Images/img5.jpg" class="img1">
+            <p class="para0">Visit the Stores page and locate your nearest BirchTree® store</p>
+            <button class="btn btn0 btn-light" onclick="stores()">Locate Stores</button>
+            <a href="https://www.facebook.com/" target="_blank"><img src="SN_Images/f.png" class="l1 l_all"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="SN_Images/i.png" class="l2 l_all"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="SN_Images/t.png" class="l3 l_all"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="SN_Images/y.png" class="l4 l_all"></a>
+   
+        </div>
+
+        <div class="sub-cont2">
+
+            <p class="title1">Create Account</p>
+            <p class="title2">Fill up the categories below to register</p>
+
+            <p class="para1">Already registered? - <a href="Sign_In.html" class="link1">Sign In</a> or visit <a href="Index.html" class="link1">Home</a></p>
+            
+
+            <div class="input-group i1">
+                
+                <button class="btn b bt1" type="button">
+                <i class="fa fa-envelope ic"></i> </button>
+                <input class="in" placeholder="Email Address" autocomplete="off" id="in1">
+                <div class="cover1" id="cover1"></div>
+            </div>
+
+            <div class="input-group i2">
+                <button class="btn b bt2" type="button">
+                <i class="fa fa-user-circle ic"></i> </button>
+                <input class="in" placeholder="Username" id="user" autocomplete="off">
+                <div class="cover2" id="cover2"></div>
+            </div>
+
+            <div class="input-group i3">
+                <button class="btn b bt3" type="button">
+                <i class="fa fa-lock ic"></i> </button>
+                <input class="in" placeholder="Password" type="password" id="psw" onkeyup="check_psw()" autocomplete="off">
+                <div class="cover3" id="cover3"></div>
+            </div>
+
+            <div class="bar-cont" id="bar-cont">
+                <p id="bar-text" id="bar-text"></p>
+            </div>
+            
+
+            <div class="input-group i4">
+                <button class="btn b bt4" type="button">
+                <i class="fa fa-question ic"></i> </button>
+                <input class="in" placeholder="Security Qs: Name your first school" id="sqs" autocomplete="off">
+                <div class="cover4" id="cover4"></div>
+            </div>
+
+
+            <img src="Navbar_Images/tri.png" class="alert1" id="alert1">
+            <div class="alert2" id="alert2">
+            <span class="popuptext" id="al">Alert
+            </span></div>
+
+            <img src="Navbar_Images/load0.gif" id="an">
+
+            <button class="btn done" onclick="new_user()">
+                Sign Up
+            </button>
+
+        </div>
+
+        <div class="sub-cont3" id="sc3">
+        <img src="SN_Images/cover.jpg" class="img" id="img">
+        <p class="title3" id="t3">Registered!</p>
+        <p class="para3" id="p3">You can now sign in and add items to your cart. Happy shopping!
+        </p>
+        <button class="btn btn-dark btn3" id="b3" onclick="signin()">Proceed to Sign In</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+  $(document).ready(function(){
+      $('.alert1').hide();
+      $('.alert2').hide();
+      $('#an').hide();
+
+      $('.bt1').hover(function(){  
+    var ss1=window.matchMedia("(min-width: 990px)");
+    var ss2=window.matchMedia("(min-width: 550px) and (max-width: 990px)");
+    var ss3=window.matchMedia("(max-width: 550px)"); 
+    if (ss1.matches){ document.getElementById('cover1').style.width="57.5%"; }
+    else if (ss2.matches) { document.getElementById('cover1').style.width="61%"; }
+    else if (ss3.matches) { document.getElementById('cover1').style.width="76%"; }
+      document.getElementById('cover1').style.transition="1s";
+      document.getElementById('in1').style.width="0%"; 
+      document.getElementById('in1').style.transition="1s"; 
+      setTimeout(c1,500);
+    function c1()
+    { document.getElementById('cover1').innerHTML="Subscribe to our newsletter"; }});
+
+      $('.bt1').mouseleave(function(){  
+        var ss3=window.matchMedia("(max-width: 550px)"); 
+        document.getElementById('in1').style.opacity="1";
+      document.getElementById('cover1').style.width="0%";
+      if (ss3.matches) { document.getElementById('in1').style.width="80%"; }
+      else { document.getElementById('in1').style.width="70%"; }
+      setTimeout(c2,500);
+      function c2() { document.getElementById('cover1').innerHTML=""; } });
+
+      $('.bt2').hover(function(){  
+    var ss1=window.matchMedia("(min-width: 990px)");
+    var ss2=window.matchMedia("(min-width: 550px) and (max-width: 990px)");
+    var ss3=window.matchMedia("(max-width: 550px)"); 
+    if (ss1.matches){ document.getElementById('cover2').style.width="57.5%"; }
+    else if (ss2.matches) { document.getElementById('cover2').style.width="61%"; }
+    else if (ss3.matches) { document.getElementById('cover2').style.width="76%"; }
+      document.getElementById('cover2').style.transition="1s";
+      document.getElementById('user').style.width="0%"; 
+      document.getElementById('user').style.transition="1s"; 
+      setTimeout(c3,500);
+    function c3()
+    { document.getElementById('cover2').innerHTML="Min. 5 characters, no spaces"; }});
+
+      $('.bt2').mouseleave(function(){  
+        var ss3=window.matchMedia("(max-width: 550px)"); 
+        document.getElementById('user').style.opacity="1";
+      document.getElementById('cover2').style.width="0%";
+      if (ss3.matches) { document.getElementById('user').style.width="80%"; }
+      else { document.getElementById('user').style.width="70%"; }
+      setTimeout(c4,500);
+      function c4() { document.getElementById('cover2').innerHTML=""; } });
+
+      $('.bt3').hover(function(){  
+    var ss1=window.matchMedia("(min-width: 990px)");
+    var ss2=window.matchMedia("(min-width: 550px) and (max-width: 990px)");
+    var ss3=window.matchMedia("(max-width: 550px)"); 
+    if (ss1.matches){ document.getElementById('cover3').style.width="57.5%"; }
+    else if (ss2.matches) { document.getElementById('cover3').style.width="61%"; }
+    else if (ss3.matches) { document.getElementById('cover3').style.width="76%"; }
+      document.getElementById('cover3').style.transition="1s";
+      document.getElementById('psw').style.width="0%"; 
+      document.getElementById('psw').style.transition="1s"; 
+      setTimeout(c5,500);
+    function c5()
+    { document.getElementById('cover3').innerHTML="Min. 1 character, no spaces"; }});
+
+      $('.bt3').mouseleave(function(){
+        var ss3=window.matchMedia("(max-width: 550px)");   
+        document.getElementById('psw').style.opacity="1";
+      document.getElementById('cover3').style.width="0%";
+      if (ss3.matches) { document.getElementById('psw').style.width="80%"; }
+      else { document.getElementById('psw').style.width="70%"; }
+      setTimeout(c6,500);
+      function c6() { document.getElementById('cover3').innerHTML=""; } });
+
+      $('.bt4').hover(function(){  
+    var ss1=window.matchMedia("(min-width: 990px)");
+    var ss2=window.matchMedia("(min-width: 550px) and (max-width: 990px)");
+    var ss3=window.matchMedia("(max-width: 550px)"); 
+    if (ss1.matches){ document.getElementById('cover4').style.width="57.5%"; }
+    else if (ss2.matches) { document.getElementById('cover4').style.width="61%"; }
+    else if (ss3.matches) { document.getElementById('cover4').style.width="76%"; }
+      document.getElementById('cover4').style.transition="1s";
+      document.getElementById('sqs').style.width="0%"; 
+      document.getElementById('sqs').style.transition="1s"; 
+      setTimeout(c7,500);
+    function c7()
+    { document.getElementById('cover4').innerHTML="Required in case of password reset"; }});
+
+      $('.bt4').mouseleave(function(){  
+        var ss3=window.matchMedia("(max-width: 550px)"); 
+        document.getElementById('sqs').style.opacity="1";
+      document.getElementById('cover4').style.width="0%";
+      if (ss3.matches) { document.getElementById('sqs').style.width="80%"; }
+      else { document.getElementById('sqs').style.width="70%"; }
+      setTimeout(c8,500);
+      function c8() { document.getElementById('cover4').innerHTML=""; } });
+ 
+
+  });
+
+  function check_psw()
+  {
+    document.getElementById('bar-cont').style.opacity="1";
+    document.getElementById('bar-text').style.opacity="1";
+    var a0=document.getElementById("psw").value;
+    var a=a0.length;
+    var sp=/[*,.;()""?!&''-/^%@|:<>]/g, num=/[0-9]/g, letters=/[a-z]/g;
+    var sp1=a0.match(sp), num1=a0.match(num), letters1=a0.match(letters);
+    var ss1=window.matchMedia("(min-width: 990px)");
+    var ss2=window.matchMedia("(min-width: 550px) and (max-width: 990px)");
+    var ss3=window.matchMedia("(max-width: 550px)");
+
+    if ((num1==null && sp1==null && a!=0 && letters1!=null) || (num1!=null && sp1==null && a!=0 && letters1==null) || (num1==null && sp1!=null && a!=0 && letters1==null) )
+    { 
+    if (ss1.matches) { document.getElementById('bar-cont').style.width="22.3%"; }
+    else if (ss2.matches) { document.getElementById('bar-cont').style.width="23.66%"; }
+    else if (ss3.matches) { document.getElementById('bar-cont').style.width="30%"; }
+        document.getElementById('bar-cont').style.background="rgb(212, 64, 93)";
+        document.getElementById('bar-cont').style.transition="0.5s";
+        document.getElementById('bar-text').innerHTML="Weak";
+    }
+    else if ((num1!=null && sp1==null && a>5 && letters1!=null)
+    || (num1==null && sp1!=null && a>5 && letters1!=null)
+    ) 
+    { 
+    if (ss1.matches) { document.getElementById('bar-cont').style.width="44.6%"; }
+    else if (ss2.matches) { document.getElementById('bar-cont').style.width="47.33%"; }
+    else if (ss3.matches) { document.getElementById('bar-cont').style.width="60%"; }
+        document.getElementById('bar-cont').style.background="rgb(233, 152, 1)";
+        document.getElementById('bar-cont').style.transition="1s";
+        document.getElementById('bar-text').innerHTML="Moderate"; 
+    }
+    else if (num1!=null && sp1!=null && a>7 && letters1!=null) 
+    { 
+    if (ss1.matches) { document.getElementById('bar-cont').style.width="66.9%"; }
+    else if (ss2.matches) { document.getElementById('bar-cont').style.width="71%"; }
+    else if (ss3.matches) { document.getElementById('bar-cont').style.width="90%"; }
+        document.getElementById('bar-cont').style.background="rgb(99, 190, 99)";
+        document.getElementById('bar-cont').style.transition="1s";
+        document.getElementById('bar-text').innerHTML="Strong";
+    }
+
+    else if (a==0) 
+    { 
+        document.getElementById('bar-cont').style.width="0%"; 
+        document.getElementById('bar-cont').style.transition="0s";
+        document.getElementById('bar-text').innerHTML="";
+        document.getElementById('bar-cont').style.opacity="0";
+      document.getElementById('bar-text').style.opacity="0";
+    }
+  }
+
+    </script>
+
+    <script>
+
+        function signin()
+        {
+            window.location.href="Sign_In.html";
+        }
+
+function new_user()
+        {   
+            var n=document.getElementById("user").value, m=document.getElementById("psw").value;
+            var num = /^[0-9]+$/, len0=n.length, len1=m.length;
+            var sq=document.getElementById("sqs").value;
+
+            if (n=="") 
+            { 
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Please enter a username!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+            }
+
+            if (len0<5) 
+            { 
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Username is too short!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+            }
+    
+            if (m=="") 
+            { 
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Please enter a password!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+            }
+    
+            for (var i=0; i<len0; i++)
+            {
+                //if (n.substr(i,1).match(num)) { alert('Letters only!'); return; }
+                if (n.substr(i,1)==" ")
+                 { 
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="No spaces in username!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+                 }
+            }
+
+            for (var j=0; j<len1; j++)
+            {
+                //if (n.substr(i,1).match(num)) { alert('Letters only!'); return; }
+                if (m.substr(j,1)==" ")
+                 { 
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="No spaces in password!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+                 }
+            }
+
+            if (sq=="")
+            {
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Answer the security question!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+            }
+
+            if (sq.length<4)
+            {
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Answer must be > 3 characters!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+            }
+
+            if (sq!="" && sq.length>=4)
+            {
+                if (sessionStorage.getItem("sques")==null)
+                { 
+                    var s_inside=n+len0+"/"+sq+sq.length;
+                    sessionStorage.setItem("sques",s_inside); 
+                }
+
+                else 
+                {
+                    var s_in=sessionStorage.getItem("sques");
+                    var s_in2=s_in+"*"+n+len0+"/"+sq+sq.length;
+                    sessionStorage.setItem("sques",s_in2);
+                }
+            }
+    
+            if (sessionStorage.getItem("data")!=null)
+           {
+             var n1=sessionStorage.getItem("data"), n2=n1.includes(n);
+             if (n2==true) 
+             {  
+                $(document).ready(function(){
+                document.getElementById('alert1').style.opacity="1";
+                document.getElementById('alert2').style.opacity="1";
+                document.getElementById('al').innerHTML="Already registered!";
+                $('.alert1').show(); $('.alert2').show(); }); setTimeout(alertg,2000); return; 
+             }
+           }
+    
+            if (sessionStorage.getItem("data")==null)
+            {
+                var n2=n+len0+"-"+m+len1+"/";
+                var n2a=n+len0+"/";
+                sessionStorage.setItem("data",n2);
+                sessionStorage.setItem("names",n);
+                sessionStorage.setItem("size_data",n2);
+                sessionStorage.setItem("quan_data",n2);
+                sessionStorage.setItem("curr_data",n2);
+                sessionStorage.setItem("order_nums",n2a);
+            }
+            else
+            {
+                var x=sessionStorage.getItem("data"), y=x+" "+n+len0+"-"+m+len1+"/";
+                var z1=sessionStorage.getItem("size_data");
+                var z2=sessionStorage.getItem("quan_data");
+                var zc1=sessionStorage.getItem("curr_data");
+                var on=sessionStorage.getItem("order_nums");
+               
+                var on1=on+" "+n+len0+"/";
+                var z3=z1+" "+n+len0+"-"+m+len1+"/";
+                var z4=z2+" "+n+len0+"-"+m+len1+"/";
+                var zc2=zc1+" "+n+len0+"-"+m+len1+"/";
+                
+                var x1=sessionStorage.getItem("names");
+                x1=x1+" "+n;
+                sessionStorage.setItem("names",x1);
+                sessionStorage.setItem("data",y);
+                sessionStorage.setItem("size_data",z3);
+                sessionStorage.setItem("quan_data",z4);
+                sessionStorage.setItem("curr_data",zc2);
+                sessionStorage.setItem("order_nums",on1);
+                
+            }
+            $(document).ready(function(){
+            $('.alert').hide(); 
+            $('#an').show();
+            document.getElementById('an').style.opacity="1"; 
+            }); setTimeout(alertf,2000); 
+        }
+
+        function alertg()
+        {
+            $(document).ready(function(){
+                
+                $('.alert1').hide(); $('.alert2').hide(); });
+        }
+
+        function alertf()
+        {
+            $(document).ready(function(){
+            $('.alert').hide(); 
+            $('#an').hide(); 
+            document.getElementById('an').style.opacity="0"; 
+            
+            document.getElementById('sc3').style.width="100%";
+            document.getElementById('img').style.width="100%";
+            $('.sub-cont1').hide(); 
+            $('.sub-cont2').hide(); 
+            setTimeout(show3,800);
+
+            function show3()
+            {
+            document.getElementById('t3').style.opacity="1"; 
+            document.getElementById('p3').style.opacity="1"; 
+            document.getElementById('b3').style.opacity="1"; 
+            }
+            });     
+        }
+
+        function stores()
+        { window.location.href="US branch.html"; }
+    
+
+    </script>
+    
+    </div>
+</body>
+</html>

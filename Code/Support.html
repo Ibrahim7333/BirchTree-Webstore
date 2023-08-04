@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JQ_and_BS/popper.min.js"></script>
+    <script src="JQ_and_BS/bootstrap.min.js"></script>
+    -->
+    <link rel="icon" href="Navbar_Images/tab_icon1.png" type="image/png">
+    <link rel="stylesheet" href="JQ_and_BS/bootstrap.min.css">
+    <script src="JQ_and_BS/jquery-3.2.1.slim.min.js"></script>
+    <script src="JQ_and_BS/popper.min.js"></script>
+    <script src="JQ_and_BS/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="JQ_and_BS/fontawesome.min.css">
+    <script src="JQ_and_BS/a076d05399.js"></script>
+ 
+    <script src="js/jquery-3.4.1.min.js"></script>
+ 
+   <link rel="stylesheet" href="CSS_Files/Style1.css">
+   <link rel="stylesheet" href="CSS_Files/additional_styling.css">
+   <link rel="stylesheet" href="CSS_Files/support.css">
+   <link rel="stylesheet" href="CSS_Files/FooterStyling.css">
+   <link rel="stylesheet" href="CSS_Files/icons.css">
+
+   <script src="js/Code.js"></script>
+   <script src="js/Support_Code.js"></script>
+   <script src="js/Icons.js"></script>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirchTree | Support</title>
+
+    <style>
+      .to_top {  z-index:1000; opacity: 1; margin-top: 159vh; }
+    </style>
+
+</head>
+
+<body onload="initialize()" onresize="reset_nav_styling()" id="top">
+
+  
+    <div class="animation" id="animation">
+      <img src="Navbar_Images/load.png" class="load_logo">
+      <img src="Navbar_Images/load.gif" class="load_anim">
+    </div>
+  
+    <div class="animation_body" id="animation_body">
+
+      
+
+      <div class="alert alert-info top-alert" role="alert">
+        Deliveries may be affected due to the COVID-19 pandemic
+        <span class="close-al">&times;</span>
+      </div>
+
+      
+
+      <script>
+      $(document).ready(function() {
+
+        $('.close-al').click(function() {
+          $('.top-alert').hide();
+          document.getElementById('a*').style.top="0";
+          var xc1=window.matchMedia("(max-width: 550px)");
+          var xc2=window.matchMedia("(min-width: 550px) and (max-width: 768px)");
+          if (xc1.matches)
+          { document.getElementById('top-most_s').style.marginTop="130px"; }
+          else if (xc2.matches)
+          { document.getElementById('top-most_s').style.marginTop="100px"; }
+          else 
+          { document.getElementById('top-most_s').style.marginTop="140px"; }
+        }); });
+      </script>
+
+    <nav class="a x navbar navbar-expand-lg" id="a*">
+        <a class="navbar-brand" href="navbar.html">
+          <img src="Navbar_Images/logo1.png" class="logo">
+          <img src="Navbar_Images/logo1.jpg" class="logo1">
+        </a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="coll collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="n nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Men Clothing.html">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Women Clothing.html">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Kids Clothing.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="n nav-link" href="Story.html">Our Story</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link ac" href="Support.html">Support</a>
+            </li>
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right n2 n3">
+            <span class="nav-link user1" id="user_id">
+            </span>
+          </ul>
+
+          
+        
+
+          <ul class="navbar-nav navbar-right n2">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="Navbar_Images/us.png" class="fl" id="flag"> 
+              </a>
+            <div class="dropdown-menu dropdown-menu-right fl-cont" id="fl-cont" aria-labelledby="navbarDropdown">
+                <div class="dropdown-item ctys" onclick="flag(1)">
+                  <img src="Navbar_Images/us.png" class="dp_fl">&nbsp;US ($)</div>
+                <div class="dropdown-item ctys" onclick="flag(2)">
+                  <img src="Navbar_Images/uk.png" class="dp_fl">&nbsp;UK (£)</div>
+                <div class="dropdown-item ctys" onclick="flag(3)">
+                  <img src="Navbar_Images/eu.png" class="dp_fl">&nbsp;PK (PKR)</div>
+              </div>
+        </ul>
+
+        <ul class="navbar-nav navbar-right n2">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="Navbar_Images/user1.png" class="user"> 
+            </a>
+          <div class="dropdown-menu dropdown-menu-right user-cont" id="user-cont" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item in user-menu" onclick="sign_in_func()">Sign In</a>
+            <a class="dropdown-item up user-menu" onclick="sign_out_func()">Sign Up</a>
+            <a class="dropdown-item out user-menu" onclick="logout()">Sign Out</a>
+            <a class="dropdown-item ord_h user-menu" onclick="my_orders()">My Orders</a>
+            </div>
+      </ul>
+
+      <script>
+        function my_orders() { window.location.href="Orders.html"; }
+      </script>
+
+          <ul class="cart-cont navbar-nav navbar-right n2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <img src="Navbar_Images/bag1.png" class="bag"><b class="count" id="count">0</b>
+              </a>
+            <div class="cart dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"  id="cart">
+              
+
+
+              <div class="dropdown-header h">
+                <p class="h_text">My Cart ( <b id="item-counter">0</b> )</p>
+                <p class="h_tot"><span id="cart_curr">$</span>&nbsp;<b id="total">0</b></p></div>
+ 
+          <div class="dropdown-item space"></div>
+          
+
+          <div class="dropdown-item all" id="ia">  <!-- PRODUCT 1 -->
+            <p class="name">Diamond Print Shirt | <span id="pr_curr1">$</span>&nbsp;<span id="pr_price1">21.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_a">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_a">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ia',21,'a',1)"></div>
+            <div class="dropdown-item all" id="ib">  <!-- PRODUCT 2 -->
+            <p class="name">Hallsville Shirt | <span id="pr_curr2">$</span>&nbsp;<span id="pr_price2">30.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_b">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_b">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ib',30,'b',2)"></div>
+            <div class="dropdown-item all" id="ic">  <!-- PRODUCT 3 -->
+            <p class="name">Horseshoe Shirt | <span id="pr_curr3">$</span>&nbsp;<span id="pr_price3">45.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_c">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_c">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ic',45,'c',3)"></div>
+            <div class="dropdown-item all" id="id">  <!-- PRODUCT 4 -->
+            <p class="name">Houston Shirt | <span id="pr_curr4">$</span>&nbsp;<span id="pr_price4">52.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_d">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_d">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('id',52,'d',4)"></div>
+            <div class="dropdown-item all i5" id="ie">  <!-- PRODUCT 5 -->
+            <p class="name">Ingleside Stretch Shirt | <span id="pr_curr5">$</span>&nbsp;<span id="pr_price5">55.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_e">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_e">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ie',55,'e',5)"></div>
+            <div class="dropdown-item all i6" id="if">  <!-- PRODUCT 6 -->
+            <p class="name">Printed Shirt | <span id="pr_curr6">$</span>&nbsp;<span id="pr_price6">60.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_f">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_f">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('if',60,'f',6)"></div>
+            <div class="dropdown-item all i1" id="ig">  <!-- PRODUCT 7-->
+            <p class="name">Tang Hooded Plaid Shirt | <span id="pr_curr7">$</span>&nbsp;<span id="pr_price7">65.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_g">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_g">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ig',65,'g',7)"></div>
+            <div class="dropdown-item all i2" id="ih">  <!-- PRODUCT 8 -->
+            <p class="name">Riviera Shirt | <span id="pr_curr8">$</span>&nbsp;<span id="pr_price8">70.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_h">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_h">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ih',70,'h',8)"></div>
+            <div class="dropdown-item all i3" id="ii">  <!-- PRODUCT 9 -->
+            <p class="name">Zip City Shirt | <span id="pr_curr9">$</span>&nbsp;<span id="pr_price9">71.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_i">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_i">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ii',71,'i',9)"></div>
+            <div class="dropdown-item all i4" id="ij">  <!-- PRODUCT 10 -->
+            <p class="name">Switch Up Jacket | <span id="pr_curr10">$</span>&nbsp;<span id="pr_price10">75.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_j">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_j">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ij',75,'j',10)"></div>
+            <div class="dropdown-item all i5" id="ik">  <!-- PRODUCT 11 -->
+            <p class="name">Charge Jacket | <span id="pr_curr11">$</span>&nbsp;<span id="pr_price11">75.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_k">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_k">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ik',75,'k',11)"></div>
+            <div class="dropdown-item all i6" id="il">  <!-- PRODUCT 12 -->
+            <p class="name">Niles Jacket | <span id="pr_curr12">$</span>&nbsp;<span id="pr_price12">77.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_l">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_l">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('il',77,'l',12)"></div>
+            <div class="dropdown-item all i1" id="im">  <!-- PRODUCT 13 -->
+            <p class="name">Smocked Hem Blouse | <span id="pr_curr13">$</span>&nbsp;<span id="pr_price13">21.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_m">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_m">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('im',21,'m',13)"></div>
+            <div class="dropdown-item all i2" id="in">  <!-- PRODUCT 14 -->
+            <p class="name">Ribbed Knit Sweater | <span id="pr_curr14">$</span>&nbsp;<span id="pr_price14">32.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_n">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_n">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('in',32,'n',14)"></div>
+            <div class="dropdown-item all i3" id="io">  <!-- PRODUCT 15 -->
+            <p class="name">Embelished Cuff Blouse | <span id="pr_curr15">$</span>&nbsp;<span id="pr_price15">35.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_o">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_o">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('io',35,'o',15)"></div>
+            <div class="dropdown-item all i4" id="ip">  <!-- PRODUCT 16 -->
+            <p class="name">Open-back Cami Jumpsuit | <span id="pr_curr16">$</span>&nbsp;<span id="pr_price16">45.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_p">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_p">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ip',45,'p',16)"></div>
+            <div class="dropdown-item all i5" id="iq">  <!-- PRODUCT 17 -->
+            <p class="name">Self Tie Jumpsuit | <span id="pr_curr17">$</span>&nbsp;<span id="pr_price17">50.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_q">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_q">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iq',50,'q',17)"></div>
+            <div class="dropdown-item all i6" id="ir">  <!-- PRODUCT 18 -->
+            <p class="name">Trumpet Sleeve Jumpsuit | <span id="pr_curr18">$</span>&nbsp;<span id="pr_price18">55.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_r">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_r">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ir',55,'r',18)"></div>
+            <div class="dropdown-item all i1" id="is">  <!-- PRODUCT 19 -->
+            <p class="name">Lace Insert Peplum Top | <span id="pr_curr19">$</span>&nbsp;<span id="pr_price19">57.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_s">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_s">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('is',57,'s',19)"></div>
+            <div class="dropdown-item all i2" id="it">  <!-- PRODUCT 20 -->
+            <p class="name">Stripped Smock Top | <span id="pr_curr20">$</span>&nbsp;<span id="pr_price20">63.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_t">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_t">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('it',63,'t',20)"></div>
+            <div class="dropdown-item all i3" id="iu">  <!-- PRODUCT 21 -->
+            <p class="name">Lace Yoke Smock Top | <span id="pr_curr21">$</span>&nbsp;<span id="pr_price21">77.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_u">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_u">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iu',77,'u',21)"></div>
+            <div class="dropdown-item all i4" id="iv">  <!-- PRODUCT 22 -->
+            <p class="name">Bardot Dress | <span id="pr_curr22">$</span>&nbsp;<span id="pr_price22">100.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_v">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_v">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iv',100,'v',22)"></div>
+            <div class="dropdown-item all i5" id="iw">  <!-- PRODUCT 23 -->
+            <p class="name">Polka Dot Jumpsuit | <span id="pr_curr23">$</span>&nbsp;<span id="pr_price23">120.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_w">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_w">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iw',120,'w',23)"></div>
+            <div class="dropdown-item all i6" id="ix">  <!-- PRODUCT 24 -->
+            <p class="name">Vertical-stripped Jumpsuit | <span id="pr_curr24">$</span>&nbsp;<span id="pr_price24">131.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_x">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_x">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('ix',131,'x',24)"></div>
+            <div class="dropdown-item all i1" id="iy">  <!-- PRODUCT 25 -->
+            <p class="name">Mini Mermaid Shirt | <span id="pr_curr25">$</span>&nbsp;<span id="pr_price25">59.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_y">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_y">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iy',59,'y',25)"></div>
+            <div class="dropdown-item all i2" id="iz">  <!-- PRODUCT 26 -->
+            <p class="name">Floral Top | <span id="pr_curr26">$</span>&nbsp;<span id="pr_price26">19.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_z">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_z">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('iz',19,'z',26)"></div>
+            <div class="dropdown-item all i3" id="i0">  <!-- PRODUCT 27 -->
+            <p class="name">Green Floral Top | <span id="pr_curr27">$</span>&nbsp;<span id="pr_price27">55.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_0">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_0">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i0',55,'0',27)"></div>
+            <div class="dropdown-item all i4" id="i1">  <!-- PRODUCT 28 -->
+            <p class="name">Embroidered Frock | <span id="pr_curr28">$</span>&nbsp;<span id="pr_price28">43.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_1">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_1">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i1',43,'1',28)"></div>
+            <div class="dropdown-item all i5" id="i2">  <!-- PRODUCT 29 -->
+            <p class="name">Pink Sunshine T-shirt | <span id="pr_curr29">$</span>&nbsp;<span id="pr_price29">30.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_2">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_2">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i2',30,'2',29)"></div>
+            <div class="dropdown-item all i6" id="i3">  <!-- PRODUCT 30 -->
+            <p class="name">White T-shirt | <span id="pr_curr30">$</span>&nbsp;<span id="pr_price30">21.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_3">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_3">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i3',21,'3',30)"></div>
+            <div class="dropdown-item all i1" id="i4">  <!-- PRODUCT 31 -->
+            <p class="name">Lining Shirt | <span id="pr_curr31">$</span>&nbsp;<span id="pr_price31">111.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_4">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_4">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i4',111,'4',31)"></div>
+            <div class="dropdown-item all i2" id="i5">  <!-- PRODUCT 32 -->
+            <p class="name">Red Chequered Shirt | <span id="pr_curr32">$</span>&nbsp;<span id="pr_price32">89.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_5">2</b></p>
+            <p class="size">Size:&nbsp;<b id="s_5">M</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i5',89,'5',32)"></div>
+            <div class="dropdown-item all i3" id="i6">  <!-- PRODUCT 33 -->
+            <p class="name">Blue Chequered Shirt | <span id="pr_curr33">$</span>&nbsp;<span id="pr_price33">65.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_6">3</b></p>
+            <p class="size">Size:&nbsp;<b id="s_6">L</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i6',65,'6',33)"></div>
+            <div class="dropdown-item all i4" id="i7">  <!-- PRODUCT 34 -->
+            <p class="name">Red Underwater Shirt | <span id="pr_curr34">$</span>&nbsp;<span id="pr_price34">100.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_7">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_7">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i7',100,'7',34)"></div>
+            <div class="dropdown-item all i5" id="i8">  <!-- PRODUCT 35 -->
+            <p class="name">Blue Underwater Shirt | <span id="pr_curr35">$</span>&nbsp;<span id="pr_price35">120.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_8">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_8">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i8',120,'8',35)"></div>
+            <div class="dropdown-item all i6" id="i9">  <!-- PRODUCT 36 -->
+            <p class="name">Plaid Pattern Shirt | <span id="pr_curr36">$</span>&nbsp;<span id="pr_price36">77.00</span></p><p class="quantity">Quantity:&nbsp;<b id="q_9">1</b></p>
+            <p class="size">Size:&nbsp;<b id="s_9">S</b></p><img src="Navbar_Images/del.png" class="del" onclick="delete1('i9',77,'9',36)"></div>
+
+
+               <button class="btn btn-success chk" onclick="checkout_fun()">Checkout</button>
+               <p class="error5" id="error5"></p>
+
+              </div>
+        </ul>
+        </div>
+        
+        <a href="#top" class="btn btn-light to_top"><i class="fa fa-chevron-up ttp"></i></a>
+
+        <script>
+          $(document).ready(function(){
+            $(".to_top").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+                  window.location.hash = hash;
+                }); } }); });
+          </script>
+
+      </nav>
+
+      
+      
+      
+      
+     
+      <div class="container content" id="top-most_s">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 text-left">
+       
+            <div class="mtitle">
+             Customer Support
+            </div>
+            <div class="mtext">
+              Email us with any question or quries or call 518-387-9874. We would be Happy to answer your questions.
+              Birchtree can help set you apart from the flock !<br>
+              Your questions and comments are important to us.
+            </div>
+            <div class="mbutton"><a style="text-decoration: none;" href="#seemore">See more</a></div>
+          
+          </div>
+          <div class="col-lg-6 col-sm-12"><img src="Support_Images/support.PNG"></div>
+
+          
+        </div>
+      </div>
+      <br><br><br>
+      <section id="seemore" class="container">
+        <div class="row">
+          
+          
+        
+        <div style="margin-left: 3%;" class="col-lg-3 col-sm-2 border  bg-light">
+          <div class="micon rounded-circle text-center"><img style="border-radius: 50%;" src="Support_Images/icon1.PNG"></div>
+          <h5 class="text-center">
+            FREE DELIVERY
+            ON ORDERS OVER $100</h5>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-3 col-sm-2 border  bg-light">
+          <div class="micon rounded-circle text-center"><img style="border-radius: 50%;" src="Support_Images/icon2.PNG"></div>
+          <h5 class="text-center">FREE RETURNS
+            NO QUESTIONS ASKED</h5>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-3 col-sm-2 border bg-light">
+          <div class="micon rounded-circle text-center "><img style="border-radius: 50%;" src="Support_Images/icon3.PNG"></div>
+          <h5 class="text-center">
+          HAVE ANY QUESTIONS?
+          CALL US NOW 1-800-123-456
+          </h5>
+        </div>
+      </div>
+    </section><br><br><br>
+    <h1 class="mtitle2" id="trck_email">Get in touch</h1><br><br><br>
+    <div class="container">
+      <div style="background-color:black;" class="row">
+        <div class="col-lg-6"></div>
+        <div class="sidebar col-lg-6 col-sm-3 text-center text-white mt-5">
+        <div class="tray"><img style="background-color:whitesmoke;" class="micons" src="Support_Images/micon.png">  Info@birchtree.com</div>
+        <div class="tray"><img style="background-color:whitesmoke;" class="micons2" src="Support_Images/picon.png">  518-387-9874</div>
+        <div class="tray"><img style="background-color:whitesmoke;" class="micons3" src="Support_Images/licon.png">  New York City, NY, USA</div>
+        <br><br>
+        <div class="micons5">
+        <img class="micons4" style="background-color:whitesmoke;" height="50px" width="50px"  src="Support_Images/fb.png">
+        <img class="micons4" style="background-color:whitesmoke;" height="50px" width="50px" src="Support_Images/ig.png">
+        <img class="micons4" style="background-color:whitesmoke;" height="50px" width="50px" src="Support_Images/tw.png">
+        <img class="micons4" style="background-color:whitesmoke;" height="50px" width="50px" src="Support_Images/yt.png">
+      </div>
+        </div>
+      </div>
+      <div class="mform">
+        <h4 class="mheading">Send an email for us</h4>
+        <p>Send us a quick message and we'll get right back to you</p>
+         <form onsubmit="return Validation()">
+        <label>Full name:</label><br>
+        <input type="text" required id="username">
+        <span id="usererror" class="text-danger font-weight-bold"></span>
+<br>
+        <label>Email:</label><br>
+        <input type="email" required  id="email">
+         <span id="emailerror" class="text-danger font-weight-bold"></span>
+         <br>
+        <label>Your Message</label><br>
+        <textarea rows="3" required id="message"></textarea>
+        <span id="messageerror" class="text-danger font-weight-bold"></span>
+        <br>
+        <button class="btn btn-dark">Send</button>
+        </form>
+      </div>
+    </div>
+    
+      
+        <script>
+		 function Validation()
+		 {
+			 var username=document.getElementById('username').value;
+			 var email=document.getElementById('email').value;
+			 var message=document.getElementById('message').value;
+			 
+			 var usercheck = /^[A-Za-z]{3,10}$/gi;
+			 var emailcheck = /^[a-z]{3,10}[0-9]{0,5}@{1}[a-z]{3,10}.{1}[a-z]{3,6}$/gi;
+			 var messagecheck = /^[A-Za-z]{5,50}[0-9]{0,50}$/gi;
+			 
+			 if(usercheck.test(username))
+			 {
+				 document.getElementById('usererror').innerHTML=" ";
+			 }
+			 else
+			 {
+				 document.getElementById('usererror').innerHTML="Invalid Name!";
+				 return false;
+			 }
+			 
+			 if(emailcheck.test(email))
+			 {
+				 document.getElementById('emailerror').innerHTML=" ";
+			 }
+			 else
+			 {
+				 document.getElementById('emailerror').innerHTML="Write Correct Email!";
+				 return false;
+			 }
+			 
+			 if(messagecheck.test(message))
+			 {
+				 document.getElementById('messageerror').innerHTML=" ";
+			 }
+			 else
+			 {
+				 document.getElementById('messageerror').innerHTML="Write a message!";
+				 return false;
+			 }
+			 
+		 }
+			 
+		
+		</script>    
+    <div class="white_space0" id="trck_ord"></div>
+    <h1 class="mtitle2 mt-5">Track My Order</h1>
+    <div class="mtext2 text-center">Please enter your order number below
+    </div>
+    <div class="container track text-center">
+  <input type="number" placeholder="Order Number" class="ord_input" id="num_input">
+
+  <button type="submit" class="mbutton" onclick="check()" id="trck_button">Track</button>
+</div>
+    
+<p class="error11" id="error11">Error</p>
+<img src="Navbar_Images/sp_load4.gif" class="load-animation" id="order-load-anim">
+   
+<div class="modal mod all_mod" tabindex="-1" role="dialog" id="mod1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Order Number: <span id="ord-num">0</span></h5>
+        <button class="close" onclick="close_order_modal()">&times;
+        </button>
+      </div>
+      <div class="modal-body mod-bod">
+
+        <div class="i-cont">
+
+<div class="item-all" id="it-1">&nbsp;<span id="item-quant1"><b>1</b></span> X <span id="item-name1">Item1</span> | <span id="item-size1"><b>M</b></span>  -  <span id="scurr1">$</span>&nbsp;<span id="sprice1">21.00</span></div>
+<div class="item-all" id="it-2">&nbsp;<span id="item-quant2"><b>1</b></span> X <span id="item-name2">Item2</span> | <span id="item-size2"><b>M</b></span>  -  <span id="scurr2">$</span>&nbsp;<span id="sprice2">30.00</span></div>
+<div class="item-all" id="it-3">&nbsp;<span id="item-quant3"><b>1</b></span> X <span id="item-name3">Item2</span> | <span id="item-size3"><b>M</b></span>  -  <span id="scurr3">$</span>&nbsp;<span id="sprice3">45.00</span></div>
+<div class="item-all" id="it-4">&nbsp;<span id="item-quant4"><b>1</b></span> X <span id="item-name4">Item2</span> | <span id="item-size4"><b>M</b></span>  -  <span id="scurr4">$</span>&nbsp;<span id="sprice4">52.00</span></div>
+<div class="item-all" id="it-5">&nbsp;<span id="item-quant5"><b>1</b></span> X <span id="item-name5">Item2</span> | <span id="item-size5"><b>M</b></span>  -  <span id="scurr5">$</span>&nbsp;<span id="sprice5">55.00</span></div>
+<div class="item-all" id="it-6">&nbsp;<span id="item-quant6"><b>1</b></span> X <span id="item-name6">Item2</span> | <span id="item-size6"><b>M</b></span>  -  <span id="scurr6">$</span>&nbsp;<span id="sprice6">60.00</span></div>
+<div class="item-all" id="it-7">&nbsp;<span id="item-quant7"><b>1</b></span> X <span id="item-name7">Item2</span> | <span id="item-size7"><b>M</b></span>  -  <span id="scurr7">$</span>&nbsp;<span id="sprice7">65.00</span></div>
+<div class="item-all" id="it-8">&nbsp;<span id="item-quant8"><b>1</b></span> X <span id="item-name8">Item2</span> | <span id="item-size8"><b>M</b></span>  -  <span id="scurr8">$</span>&nbsp;<span id="sprice8">70.00</span></div>
+<div class="item-all" id="it-9">&nbsp;<span id="item-quant9"><b>1</b></span> X <span id="item-name9">Item2</span> | <span id="item-size9"><b>M</b></span>  -  <span id="scurr9">$</span>&nbsp;<span id="sprice9">71.00</span></div>
+<div class="item-all" id="it-10">&nbsp;<span id="item-quant10"><b>1</b></span> X <span id="item-name10">Item2</span> | <span id="item-size10"><b>M</b></span>  -  <span id="scurr10">$</span>&nbsp;<span id="sprice10">75.00</span></div>
+<div class="item-all" id="it-11">&nbsp;<span id="item-quant11"><b>1</b></span> X <span id="item-name11">Item2</span> | <span id="item-size11"><b>M</b></span>  -  <span id="scurr11">$</span>&nbsp;<span id="sprice11">75.00</span></div>
+<div class="item-all" id="it-12">&nbsp;<span id="item-quant12"><b>1</b></span> X <span id="item-name12">Item2</span> | <span id="item-size12"><b>M</b></span>  -  <span id="scurr12">$</span>&nbsp;<span id="sprice12">77.00</span></div>
+
+<!-- 12 to 24 -->
+
+<div class="item-all" id="it-13">&nbsp;<span id="item-quant13"><b>1</b></span> X <span id="item-name13">Item1</span> | <span id="item-size13"><b>M</b></span>  -  <span id="scurr13">$</span>&nbsp;<span id="sprice13">21.00</span></div>
+<div class="item-all" id="it-14">&nbsp;<span id="item-quant14"><b>1</b></span> X <span id="item-name14">Item2</span> | <span id="item-size14"><b>M</b></span>  -  <span id="scurr14">$</span>&nbsp;<span id="sprice14">32.00</span></div>
+<div class="item-all" id="it-15">&nbsp;<span id="item-quant15"><b>1</b></span> X <span id="item-name15">Item2</span> | <span id="item-size15"><b>M</b></span>  -  <span id="scurr15">$</span>&nbsp;<span id="sprice15">35.00</span></div>
+<div class="item-all" id="it-16">&nbsp;<span id="item-quant16"><b>1</b></span> X <span id="item-name16">Item2</span> | <span id="item-size16"><b>M</b></span>  -  <span id="scurr16">$</span>&nbsp;<span id="sprice16">45.00</span></div>
+<div class="item-all" id="it-17">&nbsp;<span id="item-quant17"><b>1</b></span> X <span id="item-name17">Item2</span> | <span id="item-size17"><b>M</b></span>  -  <span id="scurr17">$</span>&nbsp;<span id="sprice17">50.00</span></div>
+<div class="item-all" id="it-18">&nbsp;<span id="item-quant18"><b>1</b></span> X <span id="item-name18">Item2</span> | <span id="item-size18"><b>M</b></span>  -  <span id="scurr18">$</span>&nbsp;<span id="sprice18">55.00</span></div>
+<div class="item-all" id="it-19">&nbsp;<span id="item-quant19"><b>1</b></span> X <span id="item-name19">Item2</span> | <span id="item-size19"><b>M</b></span>  -  <span id="scurr19">$</span>&nbsp;<span id="sprice19">57.00</span></div>
+<div class="item-all" id="it-20">&nbsp;<span id="item-quant20"><b>1</b></span> X <span id="item-name20">Item2</span> | <span id="item-size20"><b>M</b></span>  -  <span id="scurr20">$</span>&nbsp;<span id="sprice20">63.00</span></div>
+<div class="item-all" id="it-21">&nbsp;<span id="item-quant21"><b>1</b></span> X <span id="item-name21">Item2</span> | <span id="item-size21"><b>M</b></span>  -  <span id="scurr21">$</span>&nbsp;<span id="sprice21">77.00</span></div>
+<div class="item-all" id="it-22">&nbsp;<span id="item-quant22"><b>1</b></span> X <span id="item-name22">Item2</span> | <span id="item-size22"><b>M</b></span>  -  <span id="scurr22">$</span>&nbsp;<span id="sprice22">100.00</span></div>
+<div class="item-all" id="it-23">&nbsp;<span id="item-quant23"><b>1</b></span> X <span id="item-name23">Item2</span> | <span id="item-size23"><b>M</b></span>  -  <span id="scurr23">$</span>&nbsp;<span id="sprice23">120.00</span></div>
+<div class="item-all" id="it-24">&nbsp;<span id="item-quant24"><b>1</b></span> X <span id="item-name24">Item2</span> | <span id="item-size24"><b>M</b></span>  -  <span id="scurr24">$</span>&nbsp;<span id="sprice24">131.00</span></div>
+
+<!-- 24 to 36 -->
+
+<div class="item-all" id="it-25">&nbsp;<span id="item-quant25"><b>1</b></span> X <span id="item-name25">Item1</span> | <span id="item-size25"><b>M</b></span>  -  <span id="scurr25">$</span>&nbsp;<span id="sprice25">59.00</span></div>
+<div class="item-all" id="it-26">&nbsp;<span id="item-quant26"><b>1</b></span> X <span id="item-name26">Item2</span> | <span id="item-size26"><b>M</b></span>  -  <span id="scurr26">$</span>&nbsp;<span id="sprice26">19.00</span></div>
+<div class="item-all" id="it-27">&nbsp;<span id="item-quant27"><b>1</b></span> X <span id="item-name27">Item2</span> | <span id="item-size27"><b>M</b></span>  -  <span id="scurr27">$</span>&nbsp;<span id="sprice27">55.00</span></div>
+<div class="item-all" id="it-28">&nbsp;<span id="item-quant28"><b>1</b></span> X <span id="item-name28">Item2</span> | <span id="item-size28"><b>M</b></span>  -  <span id="scurr28">$</span>&nbsp;<span id="sprice28">43.00</span></div>
+<div class="item-all" id="it-29">&nbsp;<span id="item-quant29"><b>1</b></span> X <span id="item-name29">Item2</span> | <span id="item-size29"><b>M</b></span>  -  <span id="scurr29">$</span>&nbsp;<span id="sprice29">30.00</span></div>
+<div class="item-all" id="it-30">&nbsp;<span id="item-quant30"><b>1</b></span> X <span id="item-name30">Item2</span> | <span id="item-size30"><b>M</b></span>  -  <span id="scurr30">$</span>&nbsp;<span id="sprice30">21.00</span></div>
+<div class="item-all" id="it-31">&nbsp;<span id="item-quant31"><b>1</b></span> X <span id="item-name31">Item2</span> | <span id="item-size31"><b>M</b></span>  -  <span id="scurr31">$</span>&nbsp;<span id="sprice31">111.00</span></div>
+<div class="item-all" id="it-32">&nbsp;<span id="item-quant32"><b>1</b></span> X <span id="item-name32">Item2</span> | <span id="item-size32"><b>M</b></span>  -  <span id="scurr32">$</span>&nbsp;<span id="sprice32">89.00</span></div>
+<div class="item-all" id="it-33">&nbsp;<span id="item-quant33"><b>1</b></span> X <span id="item-name33">Item2</span> | <span id="item-size33"><b>M</b></span>  -  <span id="scurr33">$</span>&nbsp;<span id="sprice33">65.00</span></div>
+<div class="item-all" id="it-34">&nbsp;<span id="item-quant34"><b>1</b></span> X <span id="item-name34">Item2</span> | <span id="item-size34"><b>M</b></span>  -  <span id="scurr34">$</span>&nbsp;<span id="sprice34">100.00</span></div>
+<div class="item-all" id="it-35">&nbsp;<span id="item-quant35"><b>1</b></span> X <span id="item-name35">Item2</span> | <span id="item-size35"><b>M</b></span>  -  <span id="scurr35">$</span>&nbsp;<span id="sprice35">120.00</span></div>
+<div class="item-all" id="it-36">&nbsp;<span id="item-quant36"><b>1</b></span> X <span id="item-name36">Item2</span> | <span id="item-size36"><b>M</b></span>  -  <span id="scurr36">$</span>&nbsp;<span id="sprice36">77.00</span></div>
+
+<div class="delivery-info all_mod">
+  <p class="d-d"><b>Estimated Delivery: </b><span id="delivery-date">1st Oct 2020</span></p>
+  <p class="d-c"><b>Region: </b><span id="delivery-carrier"></span></p>
+</div>
+
+</div>
+        
+      </div>
+      <div class="modal-footer">
+        <p class="cust-name-cont">Customer Name: <span id="cust-name"></span></p>
+        <p class="cust-total-cont">Total: <span id="cust-curr">$</span>&nbsp;<span id="cust-total">0</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="white_space1 all_mod"></div>
+  
+<div class="white_space2"></div>
+      <<div class="footer" id="ft">
+
+        <div class="wave-cont">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="black" fill-opacity="1" d="M0,128L80,117.3C160,107,320,85,480,96C640,107,800,149,960,154.7C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
+        </div>
+
+       <a href="Index.html"><img src="Footer/image2.png" class="foot_logo"></a> 
+        
+
+        <div class="email">
+            <input type="email" placeholder="Email Address" id="em">
+            <div class="cont"><button class="btn btn1" id="bn">Subscribe</button></div>
+        </div>
+
+        <div class="col1">
+            <p class="p_title">Support</p>
+            <a href="Support.html" class="link"><span class="flink">Orders</span></a><br> 
+            <a href="Support.html" class="link"><span class="flink">Exchanges</span></a><br>
+            <a href="Support.html" class="link"><span class="flink">Returns</span></a><br>
+        </div>
+
+        <div class="col2">
+            <p class="p_title">Our Stores</p>
+            <a href="US branch.html" class="link"><span class="flink">United States</span></a><br> 
+            <a href="Uk branch.html" class="link"><span class="flink">United Kingdom</span></a><br>        
+            <a href="Europe branch.html" class="link"><span class="flink">Europe</span></a><br>
+        </div>
+        
+        <div class="col3">
+            <p class="p_title">Help</p>
+            <a href="FAQS.html" class="link"><span class="flink">Help & FAQs</span></a><br> 
+            <a href="Support.html" class="link"><span class="flink">Contact Us</span></a><br>
+            <a href="" class="link"  data-toggle="" data-target=""><span class="flink">Terms of Use</span></a><br>
+        </div>
+
+        <div class="col4">
+            <p class="p_title">About</p>
+            <a href="Story.html" class="link"><span class="flink">Our Story</span></a><br> 
+            <a href="Career.html" class="link"><span class="flink">Careers</span></a><br>
+            <a href="newsroom.html" class="link"><span class="flink">Newsroom</span></a><br>
+        </div>
+
+
+        <div class="img1">  
+            <a href=""><img src="Footer/fb1.png" class="fb"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/fb.png" class="fb1"> </a>
+        </div>
+
+        <div class="img2">  
+            <a href=""><img src="Footer/ig1.png" class="ig"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/ig.png" class="ig1"> </a>
+        </div>
+
+        <div class="img3">  
+            <a href=""><img src="Footer/yt1.png" class="yt"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/yt.png" class="yt1"> </a>
+        </div>
+
+        <div class="img4">  
+            <a href=""><img src="Footer/tw1.png" class="tw"> </a>
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="Footer/tw.png" class="tw1"> </a>
+        </div>
+
+        <img src="Footer/line.png" class="line">
+
+        <div class="dropdown d1">
+            <button class="btn b1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>
+                <img src="Footer/1a.png" class="f1 allf">
+                <img src="Footer/2a.png" class="f2 allf">
+                <img src="Footer/3a.png" class="f3 allf">
+                &nbsp;&nbsp;
+                <b><span  id="flag-country"></span></b></span>
+            </button>
+            <div class="dropdown-menu d-menu" aria-labelledby="dropdownMenuButton">
+              <span class="dropdown-item it o1">United States</span>
+              <span class="dropdown-item it o2">United Kingdom</span>
+              <span class="dropdown-item it o3">Europe</span>
+            </div>
+          </div>
+
+          <script>
+        
+          </script>
+          <p class="cp">BirchTree®. All rights reserved. 2020</p>
+    </div>
+    
+
+
+  
+
+ </div>   
+</body>
+</html>
