@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+
+input:focus, textarea:focus, select:focus, button:focus , button:active, .dropdown-menu, .dropdown-toggle, .nav-link, .btn:focus, .btn:active{
+    outline: none;
+    box-shadow: none;
+}
+
+
+#animation_body
+{
+    display: none;
+}
+
+#animation
+{
+    display:block;
+    height: 100vh;
+    width: 100%;
+    background: #313131;
+    background: black;
+}
+
+.load_logo
+{
+  position: absolute;
+  width: 12%;
+  margin-left: 44%;
+  margin-top: 30vh;
+}
+
+.load_anim
+{
+    position: absolute;
+    width: 6%;
+  margin-left: 47%;
+  margin-top: 55vh;
+}
+
+@media screen and (max-width: 800px) 
+{
+    body .load_logo
+    {
+        width: 26%;
+        margin-left: 37%;
+        margin-top: 25vh;
+    }
+
+    body .load_anim
+    {
+        width: 12%;
+        margin-left: 44%;
+        margin-top: 55vh;
+    }
+}
+
+@media screen and (max-width: 550px) 
+{
+    body .load_logo
+    {
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 25vh;
+    }
+
+    body .load_anim
+    {
+        width: 18%;
+        margin-left: 41%;
+        margin-top: 55vh;
+    }
+}
+
+.cont
+{
+    /*box-shadow: 0px 2px 4px 4px #e2e2e2;*/
+    position: absolute;
+    background: #313131;
+    width: 36%;
+    margin-left: 32%;
+    height: 40vw;
+    margin-top: 8vw;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+
+.img
+{
+    position: absolute;
+    width: 100%;
+}
+
+.tick
+{
+    position: absolute;
+    width: 16%;
+    margin-left: 42%;
+    margin-top: 12vw;
+    opacity: 0;
+}
+
+.title
+{
+    position: absolute;
+    font-family: "Jost";
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+    margin-top: 5vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.title1, .title2, .title3
+{
+    position: absolute;
+    color: white;
+    font-family: "Jost";
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-top: 12.5vw;
+}
+
+.title2 { opacity: 0; margin-top: 13vw; }
+.done1 { opacity: 0; }
+.i3 { opacity: 0; }
+
+
+.title3 { opacity: 0; }
+
+.title3
+{
+  font-size: 2.5vw;
+  margin-top:21vw;
+}
+
+.b
+{
+    outline: none;
+    border: none;
+    border-radius: 0;
+    /*background: #55b1ae;*/
+    background: white;
+    color: black;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    height: 3.4vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.b:hover { color: black; }
+
+.ic
+{
+  padding-left: 0.4vw;
+  padding-right: 0.4vw;
+  width: 2vw;
+}
+
+input
+{
+    border: none;
+    height: 3.4vw;
+    background: black;
+}
+
+.i1, .i2, .i3, .i4
+{
+    position: absolute;
+    margin-left: 0%;
+    width: 100%;
+    padding-left: 15%;
+}
+
+.i1 { margin-top: 15.5vw; }
+.i2 { margin-top: 20vw; }
+.i3 { margin-top: 17vw; }
+
+
+.in 
+{  
+    width: 70%; 
+    font-family: "Jost";
+    padding-left: 1vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    /*background: rgb(227, 235, 241);*/
+    background: rgb(41, 0, 65);
+    font-size: 1.3vw;
+    /*color: rgb(110, 110, 110);*/
+    color: rgb(207, 205, 205);
+    letter-spacing: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#user::placeholder, #sqs::placeholder { font-family: "Jost"; color: rgb(170, 169, 169);
+letter-spacing: 0.5px; font-size: 1.1vw;
+}
+
+.done, .done1, .done2
+{
+    background: white;
+    color: black;
+    position: absolute;
+    margin-top: 30vw;
+    width: 50%;
+    margin-left: 25%;
+    font-family: "Jost";
+    border-radius: 3vw;
+    padding: 0.7vw 0vw 0.7vw 0vw;
+    font-size: 1.4vw;
+    border:none;
+    letter-spacing: 1px;
+}
+
+
+
+.done:hover { background: white; color: black; border:none; }
+
+.para
+{
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    margin-top: 35.5vw;
+    font-family: "Jost";
+    color: white;
+    font-size: 1.3vw;
+}
+
+.link { color: white; text-decoration: underline; }
+.link:hover { color: rgb(221, 221, 221); }
+
+#an
+  {
+      position: absolute;
+      width: 10%;
+      margin-left: 45%;
+      margin-top: 25vw;
+      opacity: 0;
+  }
+
+#alert1, #alert2
+{
+    opacity: 0;
+}
+
+.alert2
+{
+    margin-left: 20%;
+    margin-top: 25vw; 
+    position: absolute;
+    width: 60%;
+    background-color: rgb(250, 90, 122);
+    padding: 0.6vw 2.3vw 0.6vw 2vw;
+    border-radius: 0.5vw;
+    text-align: center; 
+  }
+
+  .alert1
+  {
+      position: absolute;
+      width: 6%;
+      margin-left: 24%;
+      margin-top: 24vw;
+      margin-left: 47%;
+  }
+  
+  .popuptext
+{
+    color: white;
+    text-align: center;
+    border-radius: 0.5vw;
+    font-size: 1.3vw;
+    font-family: "Jost";
+    line-height: 1.8vw;
+  }
+
+  .bar-cont
+{
+    position: absolute;
+    margin-top: 21vw;
+    width: 0%; /* 70% */
+    margin-left: 15%;
+    height: 2vw;
+    background: rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+#bar-text
+{
+    text-align: center;
+    font-family: "Jost";
+    color: white;
+    line-height: 2vw;
+}
+
+#psw1::placeholder { font-size: 1.3vw; letter-spacing: 0.5px; }
+
+  @media screen and (max-width: 900px)
+  {
+    body .cont
+    {
+        width: 40%;
+        margin-left: 30%;
+        height: 50vw;
+        margin-top: 14vw;
+        border-radius: 2vw;
+    }
+    
+    body .title
+    {
+        font-size: 3.7vw;
+        margin-top: 4.5vw;
+        font-weight: 400;
+    }
+
+    body .title1, body .title2, body .title3
+{
+    font-size: 1.7vw;
+    margin-top: 12.5vw;
+}
+
+body .title2
+{
+    margin-top: 15vw;
+}
+
+body .title3
+{
+    font-size: 3.5vw;
+    margin-top: 26vw;
+}
+
+body .tick
+{
+    width: 16%;
+    margin-left: 42%;
+    margin-top: 17vw;
+}
+
+    body .b
+    {
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        height: 4.5vw;
+    }
+    
+    body .ic
+    {
+      padding-left: 0.4vw;
+      padding-right: 0.4vw;
+    }
+    
+    body input
+    {
+        height: 4.5vw;
+    }
+    
+    body .i1, body .i2, body .i3
+    {
+        padding-left: 15%;
+    }
+    
+    body .i1 { margin-top: 16vw; }
+    body .i2 { margin-top: 22vw; }
+    body .i3 { margin-top: 19vw; }
+    
+    body .in 
+    {  
+        width: 70%; 
+        padding-left: 1vw;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        font-size: 1.7vw;
+    }
+    
+    body .done, body .done1
+    {
+        margin-top: 35vw;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 3vw;
+        padding: 0.9vw 0vw 0.9vw 0vw;
+        font-size: 1.8vw;
+    }
+    
+    body .para
+    {
+        margin-top: 43vw;
+        font-size: 1.7vw;
+    }
+
+    
+    body #an
+      {
+          width: 12%;
+          margin-left: 44%;
+          margin-top: 28vw;
+      }
+    
+    body .alert2
+    {
+        margin-left: 20%;
+        margin-top: 29vw; 
+        width: 60%;
+        padding: 0.6vw 2.3vw 0.6vw 2vw;
+        border-radius: 0.5vw;
+      }
+    
+      body .alert1
+      {
+          width: 6%;
+          margin-left: 24%;
+          margin-top: 28vw;
+          margin-left: 47%;
+      }
+      
+      body .popuptext
+     {
+        border-radius: 0.5vw;
+        font-size: 1.7vw;
+        line-height: 1.8vw;
+      }
+
+      body .bar-cont
+      {
+          margin-top: 24vw;
+          width: 0%; /* 70% */
+          margin-left: 15%;
+          height: 2.5vw;
+      }
+      
+      body #bar-text
+      {
+          line-height: 2.5vw;
+      }
+
+      body #psw1::placeholder { font-size: 1.7vw; }
+
+  }
+
+
+  @media screen and (max-width: 550px)
+{
+
+    body .cont
+    {
+        width: 70%;
+        margin-left: 15%;
+        height: 85vw;
+        margin-top: 20vw;
+        border-radius: 4vw;
+    }
+    
+    body .title
+    {
+        font-size: 6.5vw;
+        margin-top: 7vw;
+        font-weight: 400;
+    }
+
+    body .title1, body .title2, body .title3
+{
+    font-size: 2.8vw;
+    margin-top: 20vw;
+}
+
+body .title2 { margin-top: 23vw; }
+
+    body #user::placeholder, body #sqs::placeholder { letter-spacing: 0.5px; font-size: 2.3vw; }
+    
+    body .b
+    {
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        height: 8vw;
+        width: 7.5vw;
+    }
+    
+    body .ic
+    {
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }
+    
+    body input
+    {
+        height: 8vw;
+    }
+    
+    body .i1, body .i2
+    {
+        padding-left: 15%;
+    }
+    
+    body .i1 { margin-top: 25vw; }
+    body .i2 { margin-top: 35vw; }
+    body .i3 { margin-top: 30vw; }
+
+    body .in 
+    {  
+        width: 70%; 
+        padding-left: 2vw;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        font-size: 3vw;
+    }
+    
+    body .done, body .done1
+    {
+        margin-top: 62vw;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 6vw;
+        padding: 1.7vw 0vw 1.7vw 0vw;
+        font-size: 3vw;
+    }
+    
+    body .para
+    {
+        margin-top: 76vw;
+        font-size: 2.8vw;
+    }
+
+    body .title3
+{
+    font-size: 6vw;
+    margin-top: 45vw;
+}
+
+body .tick
+{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 25vw;
+}
+    
+    body #an
+      {
+          width: 12%;
+          margin-left: 44%;
+          margin-top: 48vw;
+      }
+    
+    body .alert2
+    {
+        margin-left: 20%;
+        margin-top: 49vw; 
+        width: 60%;
+        padding: 1.2vw 2.3vw 1.2vw 2vw;
+        border-radius: 1.5vw;
+      }
+    
+      body .alert1
+      {
+          width: 6%;
+          margin-left: 24%;
+          margin-top: 47vw;
+          margin-left: 47%;
+      }
+      
+      body .popuptext
+     {
+        border-radius: 0.5vw;
+        font-size: 3vw;
+        line-height: 1.8vw;
+      }
+
+      body .bar-cont
+      {
+          margin-top: 40vw;
+          width: 0%; /* 70% */
+          margin-left: 15%;
+          height: 4vw;
+      }
+      
+      body #bar-text
+      {
+          line-height: 4vw;
+      }
+
+      body #psw1::placeholder { font-size: 2.8vw; letter-spacing: 0.5px; }
+}

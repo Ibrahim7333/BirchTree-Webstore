@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+input:focus, input:active, textarea:focus, select:focus, button:focus , button:active, .dropdown-menu, .dropdown-toggle, .nav-link, .btn:active, .dropdown:focus, .dropdown:active{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.cont1
+{
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    height:50vw;
+}
+
+.cont2
+{
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    height: 50vw;
+}
+
+.back_linka
+{
+    position: absolute;
+    text-decoration: none;
+     border-bottom: 1px solid white;
+    color: teal;
+    font-size: 1.4vw;
+    font-family: "Jost";
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.back_linka:hover
+{
+    color: black;
+}
+
+.img0
+{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    width: 30vw;
+}
+
+.size-form
+{
+    position: absolute;
+    margin-top: 34.5vw;
+    font-family: "Jost";
+    margin-left: 6.5vw;
+}
+
+.size-button
+{
+    border: 1.5px solid darkslategrey;
+    background: white;
+    border-radius: 0.5vw;
+    color: black;
+    width:12.5vw;
+    height: 3.5vw;
+
+}
+
+#size-inside-text
+{
+    text-decoration: none;
+    font-family: "Jost";
+    font-size: 1.4vw;
+}
+
+.size-dropdown
+{
+    background: white;
+    border: 1px solid black;
+}
+
+
+.size-button:hover, .size-button:active
+{
+    background: darkslategrey;
+    color: white;
+    border:none;
+}
+
+.size-option1, .size-option2, .size-option3
+{
+    color: black;
+    line-height: 1.5vw;
+    font-size: 1.3vw;
+    width: 100%;
+    text-align: center;
+}
+
+.size-option1:hover, .size-option2:hover, .size-option3:hover
+{
+    color: black;
+    background: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+.pname
+{
+    position: absolute;
+    color: darkslategrey;
+    font-family: "Jost";
+    font-size: 3vw;
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+
+.title, .ppara, .spec1, .spec2
+{
+    font-family: "Jost";
+    position: absolute;
+}
+
+.pprice
+{
+    position: absolute;
+    font-family: "Jost";
+    margin-top: 9vw;
+    font-size: 2.5vw;
+    color: black;
+    margin-left: 5vw;
+}
+
+.line_a
+{
+    position: absolute;
+    width:36vw;
+    margin-left: 5vw;
+    margin-top: 15vw;
+}
+
+.line_b
+{
+    position: absolute;
+    width:36vw;
+    margin-left: 5vw;
+    margin-top: 33vw;
+}
+
+.line_c
+{
+    position: absolute;
+    width:36vw;
+    margin-left: 5vw;
+    margin-top: 39.5vw;
+}
+
+
+.spec1
+{
+    position: absolute;
+    font-family: "Sen";
+    margin-top: 16vw;
+    margin-left: 5vw;
+      font-size: 1.4vw;
+}
+
+.spec2
+{
+    position: absolute;
+    font-family: "Sen";
+    margin-top: 16vw;
+    margin-left: 15vw;
+      font-size: 1.4vw;
+}
+
+.spec3
+{
+    position: absolute;
+    font-family: "Sen";
+    margin-top: 18.5vw;
+    margin-left: 5vw;
+    font-size: 1.4vw;
+    width: 35vw;
+}
+
+
+.ppara
+{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    width:35vw;
+    margin-top: 24vw;
+    margin-left: 5vw;
+}
+
+.counter
+{
+    position: absolute;
+    margin-top: 34.5vw;
+    margin-left: 22vw;
+}
+
+.plus, .minus, .val
+{
+    height: 3.5vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    vertical-align:middle;
+    line-height: 1vw;
+    width: 3.5vw;
+    background: darkslategrey;
+}
+
+.plus
+{
+    margin-left: 0vw;
+    border: 1px solid darkslategrey;
+}
+
+.minus
+{ border: 1px solid darkslategrey; }
+
+.plus:hover, .minus:hover
+{
+    background: darkslategrey;
+}
+
+.val:hover{
+    background: white;
+    color: black;
+    cursor:default;
+}
+
+.val
+{
+   width: 5vw;
+    background: white;
+    color: black;
+    border: 1.5px solid darkslategrey;
+    border-radius: 0.5vw;
+    cursor: default;
+}
+
+
+.add  /* ADD-TO-CART BUTTON */
+{
+    position: absolute;
+    width:28vw;
+    margin-top: 41vw;
+    margin-left: 6.7vw;
+    font-family: "Jost";
+    font-size: 1.4vw;
+    background: darkslategrey;
+    color: white;
+    border-radius: 0.5vw;
+    height: 3.5vw;
+    border:none;
+}
+
+.details
+{
+    position: absolute;
+    margin-top: 44vw;
+    margin-left: 20vw;
+    font-family: "Jost";
+    color: white;
+    border:0.1vw solid black;
+    border-radius: 0.5vw;
+    width: 11vw;
+    height: 3.5vw;
+    background: darkslategrey;
+    border:none;
+}
+
+.details:hover
+{
+    background: black;
+    color: white;
+}
+
+#lp_error
+{
+    position: absolute;
+    font-family: "Jost";
+    color: white;
+    background: coral;
+    width: 28vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    font-size: 1.5vw;
+    border-radius: 0.7vw;
+    margin-top: 45vw;
+    margin-left: 6.8vw;
+    text-align: center;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 768px) 
+ {
+    body .cont1
+    {
+        margin-bottom: 0vw;
+        margin-top: 25vw;
+        height:126vw;
+    }
+    
+    body .cont2
+    {
+        margin-bottom: 15vw;
+        margin-top: 0vw;
+        height: 160vw;
+    }
+    
+    body .back_linka
+    {
+        font-size: 3vw;
+        margin-top: -4vw;
+    }
+          
+    
+    body .img0
+    {
+        margin-top: 5vw;
+        margin-left: 0vw;
+        width: 100%;
+        left: 0;
+    }
+    
+    body .size-form
+    {
+        position: absolute;
+        margin-top: 98vw;
+        font-family: "Jost";
+        margin-left: 16%;
+    }
+    
+    body .size-button
+    {
+        border: 1.5px solid darkslategrey;
+        border-radius: 1vw;
+        width:29vw;
+        height: 7vw;   
+    }
+    
+    body #size-inside-text
+    {
+        font-size: 2.7vw;
+    }
+    
+    body .size-dropdown
+    {
+        background: white;
+        border: 1px solid black;
+    }
+    
+    
+    body .size-button:hover, body .size-button:active
+    {
+        background: darkslategrey;
+        color: white;
+        border:none;
+    }
+    
+    body .size-option1, body .size-option2, body .size-option3
+    {
+        color: black;
+        line-height: 1.5vw;
+        font-size: 1.3vw;
+        width: 100%;
+        text-align: center;
+    }
+    
+    body .pname
+    {
+        font-size: 7vw;
+        margin-top: 7vw;
+       margin-left: 0vw;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    
+    body .pprice
+    {
+        margin-top: 20vw;
+        font-size: 6vw;
+        margin-left: 38vw;
+    }
+    
+    body .line_a
+    {
+        width:70%;
+        margin-left: 15%;
+        margin-top: 35vw;
+    }
+    
+    body .line_b
+    {
+        width:70%;
+        margin-left: 15%;
+        margin-top: 92vw;
+    }
+    
+    body .line_c
+    {
+        width:70%;
+        margin-left: 15%;
+        margin-top: 111vw;
+    }
+    
+    
+    body .spec1
+    {
+        position: absolute;
+        font-family: "Sen";
+        margin-top: 40vw;
+        margin-left: 15%;
+          font-size: 3.5vw;
+    }
+    
+    body .spec2
+    {
+        margin-top: 40vw;
+        margin-left: 50%;
+          font-size: 3.5vw;
+    }
+    
+    body .spec3
+    {
+        margin-top: 50vw;
+        margin-left: 15%;
+        font-size: 3.5vw;
+        width: 66%;
+    }
+    
+    body .ppara
+    {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        width:68%;
+        margin-top: 70vw;
+        margin-left: 15%;
+    }
+    
+    body .counter
+    {
+        position: absolute;
+        margin-top: 98vw;
+        margin-left: 57%;
+    }
+    
+    body .plus, body .minus, body .val
+    {
+        height: 7vw;
+        border-radius: 1vw;
+        font-size: 4vw;
+        vertical-align:middle;
+        line-height: 0vw;
+        width: 7vw;
+        background: darkslategrey;
+    }
+    
+    .plus
+    {
+        margin-left: 0vw;
+        border: 1px solid darkslategrey;
+    }
+    
+    .minus
+    { border: 1px solid darkslategrey; }
+    
+    body .val
+    {
+       width: 10vw;
+        background: white;
+        color: black;
+        border: 1.5px solid darkslategrey;
+        border-radius: 1vw;
+        cursor: default;
+    }
+    
+    
+    body .add  /* ADD-TO-CART BUTTON */
+    {
+        position: absolute;
+        width:68%;
+        margin-top: 117vw;
+        margin-left: 15%;
+        font-family: "Jost";
+        font-size: 3vw;
+        background: darkslategrey;
+        color: white;
+        border-radius: 1vw;
+        height: 7.5vw;
+        border:none;
+    }
+    
+    body .details
+    {
+        margin-top: 273vw;
+        margin-left: 35%;
+        border-radius: 1vw;
+        width: 30%;
+        height: 6.5vw;
+        z-index: 100;
+        font-size: 2.7vw;
+    }
+    
+    
+    body #lp_error
+    {
+        width: 68%;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        font-size: 2.7vw;
+        border-radius: 0.7vw;
+        margin-top: 127vw;
+        margin-left: 15%;
+    }
+
+ }
+
+ @media screen and (max-width: 550px) 
+ {
+    body .cont1
+    {
+        margin-top: 35vw;
+    }
+
+    body .back_linka
+    {
+        font-size: 4vw;
+        margin-top: -5vw;
+    }
+          
+ }
+

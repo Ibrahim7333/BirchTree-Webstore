@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+body{
+	background-image:url(../Images/Branches/us%20branch.jpg);
+	background-attachment:fixed;
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+.top{
+	padding-top:100px;
+	
+}
+.top h1{
+	font-family:jost;
+	font-weight:600;
+	color:white;
+	margin-top:150px;
+	font-size:60px;
+
+}
+.top h3{
+	font-family:jost;
+	color:white;
+	font-weight:600;
+	font-size:45px;
+	
+}
+.top p{
+	color:white;
+	font-family:jost;
+	font-size:21px;
+	
+}
+.top button{
+	border-radius:0;
+	color:white;
+	background-color:#055;
+	border-color:2px solid #055;
+	padding:10px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:19px;
+	font-family:jost;
+	text-decoration:none;
+}
+.top button:hover{
+	color:#044;
+	background-color:white;
+	border:2px solid #044;
+}
+.top a:hover{
+	
+	text-decoration:none;
+}
+.about{
+	background-color:white;
+}
+.about h1{
+	font-family:jost;
+	font-weight:bold;
+	
+	
+}
+
+.about p{
+	font-family:jost;
+	font-size:20px;
+}
+.gallery{
+	background-color:white;
+}
+.gallery h1{
+	font-family:jost;
+	font-weight:bold;
+	
+}
+
+.gal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gal .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gal .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  position:relative;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gal .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gal .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.gal .column img{
+	background-color:grey;
+}
+.gal .column img:hover{
+	opacity:0.7;
+	background-color:black;
+	transition: 1s
+}
+.abt{
+	background-color:#EFEEED;
+}
+.abt .row{
+	background-color:white;
+	border:2px solid #CCC;
+	border-radius:8px;
+}
+.abt .row:hover .abtimg{
+	transform:scale(1);
+	transition:2s transform;
+}
+	
+.abt h1{
+	font-family:jost;
+	font-weight:bold;
+}
+.abt p{
+	font-family:jost;
+	font-size:18px;
+	}
+.abtimg{
+	background-image:url(../Images/Home/mission2.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.test{
+	background-color:white;
+}
+.test h1{
+	font-family:jost;
+	font-weight:bold;
+	
+}
+ .main{
+        
+           max-width:1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+			
+			
+        }
+		
+		
+        .imgBox img{
+			width:200px;
+            
+            height: 200px;
+        }
+        .cardd{
+            position: relative;
+            margin:20px ;
+            width: 290px;
+            height: 350px;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+            transition: 1s;
+            box-shadow: rgba(0,0,0,.7)2px 3px 4px 5px ;
+           border-radius: 12px;
+
+        }
+		
+		
+		.c1, .c2, .c3, h2{
+			color:black;
+				font-weight:bold;
+				font-family:jost;
+			
+		}
+		@media only screea and (min-width:1336px)
+		{
+			.cardd{
+				margin:40px;
+				height:360px;
+				width:300px;
+			}
+		}
+		
+		
+        .cardd:hover{
+            z-index: 1000;
+            transform: perspective(2000px)rotate(-10deg);
+/*            box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+*/            border-bottom-right-radius: 20px;
+border:5px solid #CCC;
+        }
+        .cardd .imgBox{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            transform-origin: left;
+            z-index: 1;
+            transition: 1s;
+            border-radius: 12px;
+
+        }
+        .cardd:hover.imgBox{
+            transform: rotateY(-185deg);
+        }
+        .cardd:hover .imgBox{
+            transition-delay:0.3s ;
+            transform: rotateY(-185deg);
+            opacity: 1;
+
+        }
+        .cardd .imgBox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            
+        }
+        .cardd .details{
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+			margin:25px;
+            padding: 5px;
+			margin-top:50px;
+            text-align: center;
+        }
+		.details p{
+		
+			color:black;
+			font-family:jost;
+			margin-top:15px;
+			font-size:17px;
+			font-weight:500
+		}
+       
+        
+        @keyframes animat{
+            from{
+              left: 0;
+            }
+            to{
+                left: -100%;
+            }
+        }
+        @keyframes anima{
+            from{
+              right: 0;
+            }
+            to{
+                right: -100%;
+            }
+        }
+        /* .layer1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #f333;
+            z-index: -2;
+        } */
+
+
+
+
+.contact{
+	background-color:white;
+	color:black
+}
+.contact_box{
+	box-shadow:rgba(0,0,0,0.2)3px 4px 5px 6px ;
+	font-family:jost;
+}
+.contact_headings{
+	font-weight:bold;
+	font-family:jost;
+	font-size:19px;
+}
+.contact input, .contact textarea{
+	border:2px solid #CCC;
+	
+}
+.contact label{
+	font-family:jost;
+	font-weight:500;
+	font-size:19px;
+	}
+	.contact button{
+		color:white;
+		font-family:jost;
+		background-color:black;
+		border:2px solid black;
+		border-radius:0;
+		padding:9px;
+		padding-left:12px;
+		padding-right:12px;
+	}
+	.contact button:hover{
+		color:black;
+		background-color:white;
+		border:2px solid black;
+		
+	}
+.contact button:focus{
+	outline:0;
+	border:0;
+	box-shadow:0;
+}
+.contact h1{
+	font-family:jost;
+	font-weight:bold;
+	
+}
+.locate{
+	background-color:white;
+}
+.locate h1{
+	font-family:jost;
+	
+	font-weight:bold
+}
+.locate iframe{
+	height:470px;
+	width:100%;
+}
+
+@media only screen and (max-width:550px)
+{
+	.top h1{
+	font-family:jost;
+	font-weight:500;
+	color:white;
+	margin-top:150px;
+	font-size:35px;
+}
+.top h3{
+	font-family:jost;
+	color:white;
+	font-weight:500;
+	font-size:25px;
+}
+.top p{
+	color:white;
+	font-family:jost;
+	font-size:16px;
+}
+.top button{
+	border-radius:0;
+	color:white;
+	background-color:#933;
+	border-color:2px solid #933;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:16px;
+	font-family:jost;
+}
+.contact p{
+	font-size:13px;
+}
+.locate iframe{
+	height:300px;
+}
+
+}
+@media only screen and (max-width:768px)
+{
+	.locate iframe{
+		height:330px;
+	}
+}

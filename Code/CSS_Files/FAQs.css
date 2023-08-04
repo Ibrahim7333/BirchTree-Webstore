@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+body{
+	background-color:#EFEEED;
+}
+
+.row
+{
+  margin-bottom: 100px;
+}
+
+.faqs{
+	background-color:white;
+	font-family:jost;
+	
+}
+.help h1{
+	font-family:jost;
+}
+.help p{
+	color:black;
+	font-size:16px;
+	font-family:jost
+
+}
+.faqs p{
+	color:black;
+	font-size:17px;
+}
+.accordion {
+  background-color:White;
+  color:#000;
+  cursor: pointer;
+  padding: 28px;
+  padding-left:17px;
+  width: 100%;
+   border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: 18px;
+  font-family: jost;
+  border-bottom:1px solid #CCC;
+}
+
+ .accordion:hover {
+  background-color: rgb(248, 247, 244);
+ 
+}
+.active, .active:hover{
+	background-color:#ccc;
+}
+.accordion:after {
+  content: "\2304";
+  color: #666;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2303";
+}
+
+.panel {
+  padding: 0 18px;
+  padding-top:10px;
+  background-color: rgb(248, 247, 244);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 17px;
+}
+.modal p, .modal li, .modal h5{
+	font-family:jost;
+}
+

@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+body 
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.load-animation
+{
+  position: relative;
+  margin-top: 4vw;
+  z-index: 149;
+  width: 8%;
+  margin-left: 46%;
+  opacity: 0;
+}
+
+.mtitle{
+    font-size: 62px;
+    color: black;
+    font-family: jost;
+	font-weight:bold;
+    line-height: 2cm;
+}
+.mtitle2{
+    font-size: 50px;
+    color:black;
+	font-weight:bold;
+    font-family: jost;
+    text-align: center;
+}
+.content{
+  margin-top: 200px;
+}
+.col-3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+h5{
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+.mtext{
+  margin-top: 3%;
+  font-size: 17px;
+
+  color: black;
+  font-family:"Josefin Sans" ;
+}
+.mtext2{
+  font-size: 22px;
+ 
+  color: black;
+  font-family: "Josefin Sans";
+}
+.mbutton{
+  margin-top: 6%;
+  font-size: 22px;
+color: white;
+  width: 115px;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #055;
+  font-family: jost;
+  border:none;
+}
+.mbutton a{
+  text-decoration: none;
+  color: white;
+ 
+}
+.mbutton:hover{
+	background-color:#044;
+	color:white;
+}
+/* .mbutton:hover{
+  background-color: gray;
+  color: black;
+  border: 2px solid teal;
+} */
+.micon{
+  border-radius: 50%;
+}
+.sidebar{
+  height: 65vh;
+  border-radius: 10%;
+}
+.micons{
+  height: 50px;
+  width: 50px;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 50%;
+}
+.micons2{
+  height: 50px;
+  width: 50px;
+  margin-left: -5%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.micons3{
+  height: 50px;
+  width: 50px;
+  margin-left: 8%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 50%;
+}
+.micons4{
+ 
+  margin: 2%;
+  
+  padding: 10px;
+  border-radius: 50%;
+}
+.micons5{
+  margin-left: 25%;
+  display: flex;
+}
+.mform{
+  position: absolute;
+  margin-top: -36%;
+ margin-left: -1.5%;
+ padding-left: 100px;
+ padding-right: 100px;
+ padding-top: 60px;
+ padding-bottom: 60px;
+  
+  background-color: white;
+  box-shadow:rgba(0,0,0,0.4)4px 5px 7px 8px ;
+}
+.mheading{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Jost";
+}
+.mform p{
+  font-size: 18px;
+   font-family: "Jost";
+}
+.mform label{
+  font-size: 22px;
+  
+  font-family: "Jost";
+}
+.mform input{
+width: 350px;
+border:none;
+border-bottom: 1px solid black;
+}
+.mform textarea{
+  width: 350px;
+  border:none;
+border-bottom: 1px solid black;
+}
+.mform button {
+  width: 350px;
+  font-family: "Jost";
+  background: #055;
+  border:none;
+}
+.mform button:hover{
+	background-color:#044;
+}
+.track input{
+  width: 500px;
+  height: 50px;
+  border: 2px solid grey;
+ 
+}
+.track input::placeholder{
+  font-size: 20px;
+}
+
+
+.card {
+  z-index: 0;
+  background-color: #ECEFF1;
+  padding-bottom: 20px;
+  border-radius: 10px
+}
+
+.top {
+  padding-top: 40px;
+  padding-left: 13% !important;
+  padding-right: 13% !important
+}
+
+
+.tray
+{
+  font-family: "Jost";
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px
+}
+
+.icon-content {
+  padding-bottom: 20px
+}
+
+@media screen and (max-width: 992px) {
+  .icon-content {
+      width: 50%
+  }
+}
+
+.track input::placeholder { font-family: "Josefin Sans"; letter-spacing: 0px;}
+
+.track input
+{
+  border:none;
+  border-bottom: 2px solid black;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.modal
+{
+  z-index: 0;
+  position: relative;
+  margin-top: 2vw;
+  display: block;
+  opacity: 1;
+  border:none;
+ 
+}
+
+.modal-content
+{
+  box-shadow: 0px 2px 3px 3px #cecdcd;
+  border-radius: 12px;
+  border:none;
+  
+}
+
+.modal-title
+{
+  font-family: "Jost";
+  color: white;
+  border:none;
+}
+
+.modal-header
+{
+  background: black;
+  color: white;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border:none;
+}
+
+.close
+{
+  position: absolute;
+  right:18px;
+   color: white;
+   font-weight: 200;
+   font-size: 35px;
+   line-height: 20px;
+   border:white;
+}
+
+.close:hover { color: white; }
+
+
+.mod-bod
+{
+  height: 200px;
+  overflow-y: scroll;
+  border:none;
+  background: white;
+}
+
+.modal-footer
+{
+  height: 50px;
+  background: black;
+  color: white;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border:none;
+}
+
+.cust-name-cont
+{
+  position: absolute;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  left:15px;
+  font-size: 18px;
+}
+
+.item-all
+{
+  top:0;
+  font-family: "Jost";
+  width: 107%;
+  margin-left: -3.5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  padding-left: 2vw;
+  background: rgb(235, 235, 235);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.delivery-info
+{
+  top:0;
+  font-family: "Jost";
+  width: 107%;
+  margin-left: -3.5%;
+  height: 40px;
+  font-size: 17px;
+  padding-left: 2vw;
+  background: rgb(221, 220, 220);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.d-d, .d-c
+{
+  position: absolute;
+  line-height: 38px;
+}
+
+.d-d
+{
+  left: 15px;
+}
+
+.d-c
+{
+  right: 15px;
+}
+
+.i-cont
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+
+.cust-total-cont
+{ 
+  font-family: "Josefin Sans";
+  position: absolute;
+  font-weight: 600;
+  right:15px;
+  font-size: 18px;
+}
+
+.error11
+{
+  position: absolute;
+  margin-top: 2vw;
+  background: rgb(250, 90, 122);
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  color: white;
+  font-family: "Josefin Sans";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.white_space1
+{
+  height: 10vw;
+}
+
+.white_space2
+{
+  height: 20vw;
+}
+
+.white_space0
+{
+  height: 10vw;
+}
+
+@media screen and (max-width: 600px) 
+{
+
+body .white_space0 { height: 90vw; }
+body .white_space1 { height: 20vw; }
+body .white_space2 { height: 30vw; }
+
+body .error11
+{
+  margin-top: 7vw;
+  width: 90%;
+  margin-left: 5%;
+  
+}
+
+body .modal { margin-top: 5vw; }
+
+body .load-animation
+{
+  margin-top: 7vw;
+  width: 24%;
+  margin-left: 38%;
+}
+
+body .item-all
+{
+  padding-left: 6vw;
+}
+
+
+}
+

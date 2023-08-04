@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+input:focus, textarea:focus, select:focus, button:focus , button:active, .dropdown-menu, .dropdown-toggle{
+    outline: none;
+    box-shadow: none;
+}
+
+.cont
+{
+    width: 30vw;
+    height: 35vw;
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: 5vw;
+    box-shadow: 0px 4px 4px 4px rgb(190, 190, 190);
+}
+
+.title
+{
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  position: absolute;
+  font-size: 2.8vw;
+  margin-left: 10vw;
+  margin-top: 2.7vw;
+}
+
+input
+{
+    position: absolute;
+    border:none;
+   /* border-bottom: 2px solid grey;*/
+    font-family: "Josefin Sans";
+    width: 18vw;
+    margin-left: 6vw;
+    background: rgb(185, 185, 185);
+    height: 2.7vw;
+    border-radius: 1.5vw;
+    color: white;
+    padding-left: 1.5vw;
+}
+
+::placeholder { color: white; }
+.in1 { margin-top: 11vw; }
+.in2 { margin-top: 15vw; }
+.in3 { margin-top: 19vw; }
+
+.b
+{
+    margin-top: 27vw;
+    position: absolute;
+    width: 18vw;
+    margin-left: 6vw;
+    font-family: "Josefin Sans";
+    border-radius: 1.5vw;
+    height: 2.7vw;
+}
+
+.alert
+{
+    position: absolute;
+    background: rgb(218, 87, 64);
+    font-family: "Josefin Sans";
+    color: white;
+    height: 2.3vw;
+    line-height: 0.7vw;
+    border-radius: 0.5vw;
+    margin-top: 23vw;
+    width: 18vw;
+    margin-left:6vw;
+    text-align: center;
+    opacity: 0;
+}
+
+.link1, .link2
+{
+ position: absolute;
+margin-top: 31vw;
+color: steelblue;
+font-family: "Josefin Sans";
+font-weight: 600;
+font-size: 1.2vw;
+text-decoration: underline;
+}
+
+.link1 { margin-left: 10vw; }
+.link2 { margin-left: 17vw; }
+
+
+@media screen and (max-width: 550px)
+{
+
+    body .cont
+    {
+        width: 90vw;
+        height: 110vw;
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+    
+    body .title
+    {
+      font-size: 8vw;
+      margin-left: 30vw;
+      margin-top: 7vw;
+    }
+    
+    body input
+    {
+        width: 54vw;
+        margin-left: 18vw;
+        height: 8.1vw;
+        border-radius: 5vw;
+        padding-left: 5vw;
+        font-size: 3.5vw;
+    }
+    
+    body ::placeholder { color: white; }
+    body .in1 { margin-top: 30vw; }
+    body .in2 { margin-top: 45vw; }
+    body .in3 { margin-top: 60vw; }
+    
+    body .b
+    {
+        margin-top: 90vw;
+        width: 54vw;
+        margin-left: 18vw;
+        border-radius: 5vw;
+        height: 8.1vw;
+        font-size: 3.5vw;
+    }
+
+    body .alert
+    {
+     height: 8.1vw;
+    line-height: 3.5vw;
+    border-radius: 1vw;
+    margin-top: 73vw;
+    width: 54vw;
+    margin-left:18vw;
+    font-size: 3.5vw;
+    }
+
+    body .link1, body .link2
+{
+margin-top: 102vw;
+font-size: 3.2vw;
+}
+
+body .link1 { margin-left: 30vw; }
+body .link2 { margin-left: 50vw; }
+}

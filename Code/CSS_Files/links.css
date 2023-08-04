@@ -1,0 +1,87 @@
+.cover{
+    background-image: url(../careerimgs/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+.cover2{
+    background-image: url(../careerimgs/cover2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+.cover3{
+    background-image: url(../careerimgs/cover3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+.cover4{
+    background-image: url(../careerimgs/cover4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+*{
+	font-family:jost;
+}
+.job h1{
+	font-family:jost;
+	color:black;
+	font-weight:bold;
+}
+.m{
+
+margin-top: 10%;
+}
+h3{
+    font-weight: 900;
+  
+}
+.form{
+    font-family:jost;
+			font-weight:bold;
+			
+			color:grey;
+			/* margin-top:80px; */
+			
+			
+			
+			line-height:53px
+}
+.form span{
+    color: red;
+    font-weight: bold;
+}
+.form label{
+    font-size: 22px;
+    font-weight: bold;
+}
+.form input{
+    width: 400px;
+    height: 40px;
+
+
+   
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    
+}
+.form textarea{
+	border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.form button{
+    width: 150px;
+    margin-right: 5%;
+	background-color:#066;
+	color:white;
+}
+.form button:hover{
+	background-color:white;
+	border:2px solid #055;
+	color:#055;
+}

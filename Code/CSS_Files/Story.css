@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+ .ourstory h1{
+	 color:black;
+	 font-family:jost;
+	
+ }
+ .ourstory p{
+	 font-family:jost;
+	 color:black;
+	 font-size:17px
+ }

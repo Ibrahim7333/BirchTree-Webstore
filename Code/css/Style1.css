@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+::-webkit-scrollbar {
+    /*display: none;*/
+    }
+
+    input:focus, textarea:focus, select:focus, button:focus , button:active, .dropdown-menu, .dropdown-toggle, .nav-link{
+        outline: none;
+        box-shadow: none;
+    }
+
+.t
+{ height: 30vw; }
+
+.a
+{
+    box-shadow: 0px 4px 4px #aaaaaa;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index:150;
+    height: 20px;
+}
+
+nav
+{
+    z-index: 150;
+}
+
+.coll
+{ background: white; }
+
+@media screen and (min-width: 990px)
+{ body .navbar { height: 7.5vw; } }
+
+@media screen and (max-width: 990px)
+{
+body .coll
+{
+ left:0;
+ min-width: 100%;
+}
+}
+
+.logo
+{
+    width: 5.2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    transition: transform 1s;
+}
+
+.logo:hover
+{ transform: rotate(360deg); }
+
+@media screen and (min-width: 990px)
+{
+
+body .nav-link
+{
+    font-family: "Jost";
+    font-weight: 600;
+    color: black;
+    font-size: 1.6vw;
+}
+
+body .n::after {
+    content: '';
+    display: block;
+    width: 0;
+    opacity: 0;
+    height: 0.2vw;
+    background: rgb(95, 95, 95);
+    transition: width 0.5s;
+}
+
+body .n:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+    opacity: 1;
+}
+
+body .ac::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    height: 0.2vw;
+    background: black;
+}
+}
+
+.nav-link:hover
+{
+    color: black;
+}
+
+.nav-item
+{
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.b
+{
+    background: grey;
+    float: right;
+    left: 0;
+}
+
+.cart
+{
+  float: right;
+  height: 30vw;
+  width: 24vw;
+  overflow-y: scroll;
+  border-bottom-left-radius: 1vw;
+}
+
+.error5
+{
+    float: right;
+    font-family: "Josefin Sans";
+    font-size:1.5vw;
+    font-weight: 600;
+    width: 15vw;
+    padding: 1vw;
+    margin-top: -3.7vw;
+   margin-left: 0vw;
+   text-align: center;
+   cursor: default;
+   background: white;
+  border: 3px solid rgb(204, 204, 204);
+  border-radius: 0.5vw;
+}
+
+.d
+{
+    float: left;
+}
+
+#user_id
+{
+    color:white;
+    cursor:default;
+    background: black;
+    font-family:"Jost";
+    font-size:1.3vw;
+    font-weight:500;
+    border-radius:0.5vw;
+    padding-left:1vw;
+    padding-right:1vw;
+    height:2.5vw;
+    line-height:1.4vw;
+    opacity: 0;
+}
+
+/* NAVBAR RIGHT SIDE ICONS */
+
+.fl
+{
+    margin-top: 0.2vw;
+    width: 2.9vw;
+}
+
+.dp_fl
+{
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.bag { width: 2.5vw; }
+.user { width: 2.3vw; }
+
+.name
+{
+    margin-top: 0.5vw;
+    margin-left: 0vw;
+    font-family:"Jost";
+    color: black;
+    font-size: 1.2vw;
+}
+
+.quantity
+{
+    font-family:"Jost";
+    margin-left: 0vw;
+    margin-top: -0.8vw;
+    color: black;
+    font-size: 1.2vw;
+}
+
+.size
+{
+    margin-top: -3vw;
+    margin-left: 8vw;
+    font-family:"Jost";
+    color: black;
+    font-size: 1.2vw;
+}
+
+.del
+{
+    margin-left: 18vw;
+    margin-top: -8.5vw;
+    width: 2vw;
+    cursor: pointer;
+    padding:0.3vw;
+    border-radius: 1vw;
+    background: rgb(127, 179, 221);
+}
+
+#count
+{
+    color: black;
+    cursor: default;
+}
+
+.h
+{
+    position: fixed;
+    background: rgb(95, 95, 94);
+    width: 100%;
+    z-index: 200;
+    margin-top: -0.8vw;
+    height: 4vw;
+}
+
+.space { height: 3vw; }
+
+.h_text
+{
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 0.4vw;
+}
+
+.h_tot
+{
+    position: absolute;
+    top:0;
+    color: white;
+    font-family: "Jost";
+    font-size: 1.3vw;
+    margin-left: 13vw;
+    margin-top: 1vw;
+
+}
+
+.all
+{ 
+   height: 5.5vw;
+   border-bottom: 1px solid rgb(192, 191, 191);
+   cursor: default;
+   background: rgb(247, 246, 246);
+}
+
+.chk
+{
+    margin-top: 1vw;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 1vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    font-family: "Josefin Sans";
+}
+
+.ctys
+{
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    text-align: center;
+}
+
+.ctys:hover
+{
+    cursor: pointer;
+    background: transparent;
+}
+
+.user-menu
+{
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.3vw;
+  cursor: pointer;
+}
+
+.user-menu:hover
+{
+    color: steelblue;
+    background: transparent;
+    font-size: 1.4vw;
+}
+
+@media screen and (min-width: 990px)
+{
+
+    body .user-cont
+    {
+        margin-right: 7vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        border:2px solid rgb(204, 204, 204);
+        background: white;
+    }
+
+    body .fl-cont
+    {
+        margin-right: 2vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        border:2px solid rgb(204, 204, 204);
+        background: white;
+    }
+
+    body .cart
+    {
+        border-bottom:2px solid rgb(204, 204, 204);
+        border-left:2px solid rgb(204, 204, 204);
+    }
+}
+
+.n3
+{
+    margin-top: 0.2vw;
+    margin-right: 0.5vw;
+}
+
+@media screen and (max-width: 990px)
+{
+    body .navbar
+    {
+      height: 100px;
+    }
+
+    body .nav-item
+    {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Josefin Sans";
+        font-weight: 600;
+    }
+
+    body .all
+    {
+        height: 40px;
+    }
+
+    body .logo
+    {
+        width: 60px;
+    }
+
+    body nav
+    {
+        height: 50px;   
+    }
+
+    body .cart-cont
+    {
+        margin-bottom: 100px;
+    }
+
+    body .cart
+    {
+        width: 85%;
+        margin-left: 7.5%;
+        height: 400px;
+        border:5px solid rgb(204, 204, 204);
+        border-radius: 15px;
+    }
+
+    body .coll
+    {
+        height: 100vh;
+        overflow-y: scroll;
+        border-top: 3px solid black;
+    }
+
+    body .n2
+    {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    body .user1
+    {
+        font-size: 30px;
+        font-family: "Josefin Sans";
+        font-weight: 600;
+    }
+
+    body .user
+    {
+      width: 40px;
+    }
+
+    body .bag
+    {
+        width: 40px;
+    }
+
+    body .fl
+    {
+        width: 40px;
+    }
+
+    body #user_id
+    {
+        height: 45px;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 23px;
+        line-height: 27px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    body .fl-cont
+    {
+        height: 150px;
+        width:50%;
+       margin-left: 25%;
+       border-radius: 10px;
+       border:3px solid rgb(204, 204, 204);
+    }
+
+    body .ctys
+    {
+      font-size: 23px;
+    }
+
+    body .dp_fl
+    {
+        width: 30px;
+    }
+   
+    body .n2
+    {
+        text-align: center;
+    }
+
+    body .user-cont
+    {
+        height: 100px;
+        width:50%;
+       margin-left: 25%;
+       border-radius: 10px;
+       border:3px solid rgb(204, 204, 204);
+    }
+
+    body .user-menu
+    {
+        font-size: 23px;
+       
+    }
+
+    body .user-menu:hover
+    {
+        font-size: 23px;
+        color: steelblue;
+    }
+
+    body .all
+    {
+      height: 90px;
+    }
+
+    body .h
+    {
+        position: relative;
+        width: 100%;
+        margin-top: -2.5%;
+        height: 60px;
+        
+    }
+
+    body .h_text
+    {
+        font-size: 22px;
+        margin-top: 2%;
+
+    }
+
+    body .h_tot
+    {
+        font-size: 20px;
+        margin-left: 50%;
+        margin-top: 18px;
+
+    }
+
+    body .name
+    { 
+        font-size: 3vw;
+        margin-top: 0vw;
+
+    }
+
+    body .quantity
+    {
+        font-size: 3vw;
+        margin-top: -2vw;
+    }
+
+    body .size
+    {
+        margin-top: -6vw;
+        font-size: 3vw;
+        margin-left: 40%;
+    }
+
+    body .del
+    {
+        width: 4vw;
+        margin-left: 80%;
+        margin-top: -130px;
+
+    }
+
+    body .chk
+    {
+      height: 70px;
+      font-size: 25px;
+    }
+
+    body .first
+    {
+        margin-top: 1%;
+    }
+
+    body .error5
+    {
+        width: 80%;
+        margin-right: 10%;
+        height: 100px;
+        font-size: 20px;
+        border-radius: 15px;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+  
+    body .name
+    { 
+        font-size: 18px;
+        margin-top: 5px;
+        margin-left: 10px;
+
+    }
+
+    body .quantity
+    {
+        font-size: 18px;
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+
+    body .size
+    {
+        margin-top: -43px;
+        font-size: 18px;
+        margin-left: 55%;
+    }
+
+    body .del
+    {
+        width: 22px;
+        margin-left: 93%;
+        margin-top: -130px;
+    }
+
+    body .chk
+    {
+      height: 70px;
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    body .footer
+    {
+        bottom: 0;
+    }
+
+}
+

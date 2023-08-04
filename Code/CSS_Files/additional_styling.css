@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+
+.a
+{   
+    background: white;
+    border-bottom:2px solid rgb(190, 190, 190);
+}
+
+@media screen and (min-width: 990px)
+{
+
+body .nav-link
+{
+    font-family: "Josefin Sans";
+    font-weight: 800;
+    color: rgb(95, 95, 95);
+    font-size: 1.7vw;
+    letter-spacing: 1.5px;
+}
+
+body .n::after {
+    content: '';
+    display: block;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.5s;
+}
+
+body .n:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+    opacity: 1;
+}
+
+body .ac::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 1;
+    height: 2px;
+    background: black;
+}
+
+}
+
+body .ac
+{
+    color: black;
+}
+
+.nav-link:hover
+{
+    color:black;
+}
+
+#user_id
+{
+    color:white;
+    background: black;
+}
+
+@media screen and (min-width: 990px)
+{
+    body .a .user-cont
+    {
+        margin-right: 2vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        border:2px solid rgb(204, 204, 204);
+        border-top: none;
+        color: black;
+        background: white;
+    }
+
+    body .a .fl-cont
+    {
+        margin-right: 7vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        border:2px solid rgb(204, 204, 204);
+        border-top: none;
+        color: black;
+        background: white;
+    }
+
+    body .a .ctys
+    {
+        color: black;
+    }
+
+    body .a .error5
+    {
+       background: white;
+       color: black;
+       border: 2px solid rgb(204, 204, 204);
+       border-top: none;
+       border-right: none;
+       border-radius: 0;
+  border-bottom-left-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+
+
+    }  
+}
+
+.top-alert
+{
+    font-weight: 400;
+}
+
+@media screen and (min-width: 992px)
+{
+/*body .navbar .cart
+{
+  border-top: none;
+  border-right: none;  
+  border:1px solid rgb(204, 204, 204);
+}*/
+}
+
+@media screen and (max-width: 992px)
+{
+   /* body .navbar .cart
+    {
+      border:3px solid rgb(204, 204, 204);
+    }*/
+
+  body .user, body .bag
+  {
+      display: inline;
+      width: 40px;
+  }
+
+ 
+}
+
+.top-alert
+{
+    border:none;
+    top:0;
+    
+}
+
